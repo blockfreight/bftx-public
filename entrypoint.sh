@@ -1,4 +1,4 @@
 #!/bin/bash
 cd ~/
-cd bftx-website
+cd bftx-public
 meteor --allow-superuser

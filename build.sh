@@ -6,6 +6,6 @@
     | sed 's/VERBOSITY="--silent"/VERBOSITY="--progress-bar"/' \
     | sh \
  && cd ~/ \
- && git clone https://github.com/blockfreight/bftx-ui.git \
- && cd bftx-website \
+ && git clone https://github.com/blockfreight/bftx-public.git \
+ && cd bftx-public \
  && meteor npm i

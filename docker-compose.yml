@@ -28,8 +28,8 @@ services:
             - nginx_proxy_meteor
         restart: always
     app:
-        container_name: ui_meteor
-        image: blockfreight/ui
+        container_name: public_meteor
+        image: blockfreight/public
         external_links:
            - mongo:mongo_meteor
         depends_on:
