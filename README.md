@@ -5,8 +5,8 @@ Blockfreight™ (MIT) Global Logistics Network https://blockfreight.com/
  docker
 ## Build
 git clone https://github.com/blockfreight/bft-website.git<br/>
-`docker build -t blockfreight/ui:latest .`<br/>
-`docker push blockfreight/ui`
+`docker build -t blockfreight/public:latest .`<br/>
+`docker push blockfreight/public`
 ## Env
 Create .env file in the root of you project containing the following parameters:
 
