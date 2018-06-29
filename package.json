@@ -1,0 +1,101 @@
+{
+  "name": "server-render",
+  "private": true,
+  "scripts": {
+    "start": "meteor run --port=3400",
+    "lint": "eslint .",
+    "pretest": "npm run lint --silent"
+  },
+  "dependencies": {
+    "@babel/runtime": "^7.0.0-beta.40",
+    "@material-ui/core": "^1.1.0",
+    "autoprefixer": "^7.2.6",
+    "babel-runtime": "^6.26.0",
+    "bcrypt": "^1.0.3",
+    "edge-login-ui-web": "^0.3.3",
+    "history": "^4.7.2",
+    "materialize-css": "^1.0.0-rc.1",
+    "meteor-node-stubs": "^0.3.3",
+    "moment": "^2.21.0",
+    "postcss-easy-import": "^3.0.0",
+    "postcss-import": "^11.1.0",
+    "postcss-nested": "^3.0.0",
+    "postcss-scss": "^1.0.4",
+    "postcss-simple-vars": "^4.1.0",
+    "react": "^16.2.0",
+    "react-burger-menu": "^1.1.6",
+    "react-dom": "^16.2.0",
+    "react-helmet": "^5.2.0",
+    "react-json-view": "^1.17.0",
+    "react-loadable": "^5.3.1",
+    "react-router-dom": "^4.2.2",
+    "react-s-alert": "^1.4.1",
+    "react-trend": "^1.2.4",
+    "simpl-schema": "^1.4.2"
+  },
+  "devDependencies": {
+    "@meteorjs/eslint-config-meteor": "^1.0.5",
+    "babel-eslint": "^8.2.3",
+    "eslint": "^4.19.1",
+    "eslint-config-airbnb": "^16.1.0",
+    "eslint-import-resolver-meteor": "^0.4.0",
+    "eslint-plugin-import": "^2.12.0",
+    "eslint-plugin-jsx-a11y": "^6.0.3",
+    "eslint-plugin-meteor": "^4.2.2",
+    "eslint-plugin-react": "^7.8.2",
+    "postcss": "^6.0.22",
+    "postcss-load-config": "^1.2.0"
+  },
+  "postcss": {
+    "plugins": {
+      "postcss-easy-import": {
+        "extensions": [
+          ".css",
+          ".scss",
+          ".import.css"
+        ],
+        "prefix": "_"
+      },
+      "autoprefixer": {
+        "browsers": [
+          "last 2 versions"
+        ]
+      }
+    },
+    "parser": "postcss-scss"
+  },
+  "eslintConfig": {
+    "env": {
+      "node": true,
+      "jquery": true
+    },
+    "extends": "@meteorjs/eslint-config-meteor",
+    "rules": {
+      "semi": 2,
+      "jsx-a11y/anchor-is-valid": [
+        "error",
+        {
+          "components": [
+            "Link"
+          ],
+          "specialLink": [
+            "hrefLeft",
+            "hrefRight",
+            "to"
+          ],
+          "aspects": [
+            "noHref",
+            "invalidHref",
+            "preferButton"
+          ]
+        }
+      ],
+      "class-methods-use-this": [
+        0,
+        {
+          "exceptMethods": []
+        }
+      ]
+    }
+  }
+}
