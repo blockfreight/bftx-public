@@ -83,13 +83,17 @@ export default class Login extends Component {
             )
         // this.onLogin()
         return (
+            
             <div id="container">
+                <h1>Test top</h1>
                 {scene}
+                
                 <img src="/iofrm-by-brandio/Template/images/graphic4.svg" width="100%"/>
             
-                
+                <h1>Test bottom</h1> 
 
             </div>
+            
         )
         //"/images/hub.png"
     }

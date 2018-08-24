@@ -62,6 +62,7 @@ render(){
     <Helmet>
       <title>Blockfreight</title>
     </Helmet>
+    
       <header id="main-header" data-height-onload={151} data-height-loaded="true" data-fixed-height-onload={150}
               style={{top: 0}}>
 
@@ -92,6 +93,7 @@ render(){
               </div>
 
               <div id="et-top-navigation" data-height={182} data-fixed-height={182} style={{paddingLeft: 426}}>
+                  {/*
                   <nav id="top-menu-nav">
                       <ul id="top-menu" className="nav">
                           <li id="menu-item-6630" className=""><a href="#">Connect</a>
@@ -172,6 +174,7 @@ render(){
                           </li>
                       </ul>
                   </nav>
+                  */}
                   {/*<div id="et_mobile_nav_menu">*/}
                       {/*<div className="mobile_nav closed">*/}
                           {/*<span className="select_page">Select Page</span>*/}
@@ -357,6 +360,7 @@ render(){
       {/* [responsive_menu_pro] */}
       </div> {/* .container */}
       </header>
+    
     <div className="header-container" />
     <div className="row body-container container">
         {/*<img src="https://i0.wp.com/blockfreight.com/wp-content/uploads/2017/04/shutterstock_564555790-e1512618174487.jpg?zoom=1.7999999523162842&amp;w=1080&amp;ssl=1" alt="" width="843" height="473" src-orig="https://i0.wp.com/blockfreight.com/wp-content/uploads/2017/04/shutterstock_564555790-e1512618174487.jpg?w=1080&amp;ssl=1" scale="1.7999999523162842"/>*/}
