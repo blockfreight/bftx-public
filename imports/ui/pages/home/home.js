@@ -7,7 +7,7 @@ class HomePage extends Component {
     return (
       <div className="home-page-container container">
         <h1>Home Page</h1>
-
+        <img src="/images/blockfreight_illustration.svg"width="100%"/>
       </div>
     );
   }

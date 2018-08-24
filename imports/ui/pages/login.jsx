@@ -85,9 +85,13 @@ export default class Login extends Component {
         return (
             <div id="container">
                 {scene}
-                <img src="/images/hub.png" width="100%"/>
+                <img src="/iofrm-by-brandio/Template/images/graphic4.svg" width="100%"/>
+            
+                
+
             </div>
         )
+        //"/images/hub.png"
     }
 //     render() {
 //         return (
