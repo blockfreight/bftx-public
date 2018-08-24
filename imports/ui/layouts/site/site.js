@@ -65,7 +65,7 @@ render(){
     
       <header id="main-header" data-height-onload={151} data-height-loaded="true" data-fixed-height-onload={150}
               style={{top: 0}}>
-
+          {/*
           <div id="et-top-buttons">
               <div className="et_search_outer">
                   <div className="container et_search_form_container">
@@ -77,12 +77,10 @@ render(){
                   </div>
               </div>
               {this.LoginButtons(id,hide)}
-
-
-
           </div>
+        */}
           <div className="container clearfix et_menu_container">
-              {/*
+                {/*
                 <div className="logo_container">
                   <span className="logo_helper"/>
                   <a href="/">
