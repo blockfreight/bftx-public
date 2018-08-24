@@ -82,16 +82,14 @@ render(){
 
           </div>
           <div className="container clearfix et_menu_container">
-              <div className="logo_container">
+              {/*
+                <div className="logo_container">
                   <span className="logo_helper"/>
                   <a href="/">
                       <img src="/images/blockfreight_logo_grey.svg" alt="Blockfreight, Inc. [BFT:XCPC]" id="logo"/>
                   </a>
-
-
-
-              </div>
-
+                </div>
+              */}
               <div id="et-top-navigation" data-height={182} data-fixed-height={182} style={{paddingLeft: 426}}>
                   {/*
                   <nav id="top-menu-nav">
