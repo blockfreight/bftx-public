@@ -28,6 +28,7 @@ export default class Login extends Component {
         const assetsPath = './iframe/index.html'
 
         // Create the Edge context:
+        /*
         makeEdgeUiContext({
             apiKey,
             appId,
@@ -42,6 +43,7 @@ export default class Login extends Component {
             // $FlowFixMe
             if (module.hot) module.hot.dispose(() => context.dispose())
         })
+        */
     }
 
     // Event handlers:
@@ -49,6 +51,7 @@ export default class Login extends Component {
     onLogout = () => this.setState({ account: void 0 })
 
     render () {
+      
         if(Meteor.userId())
         {
             this.props.history.push("/dashboard");
@@ -67,9 +70,9 @@ export default class Login extends Component {
                 }})
             }
         }
-
-
+       
         // Select the appropriate screen to render based on login state:
+            
         const scene =
             this.state.account && this.state.context ? (
                 <AccountScene
@@ -81,6 +84,7 @@ export default class Login extends Component {
                 void(setTimeout(()=>this.state.context.openLoginWindow({ onLogin: this.onLogin }),100))
                 // <WelcomeScene context={this.state.context} onLogin={this.onLogin} />
             )
+            
         // this.onLogin()
         return (
             
@@ -89,13 +93,13 @@ export default class Login extends Component {
                 {scene}
                 
                 <img src="/iofrm-by-brandio/Template/images/graphic4.svg" width="100%"/>
-            
+                {/*<img src="/images/hub.png" width="100%"/>*/}
                 <h1>Test bottom</h1> 
 
             </div>
             
         )
-        //"/images/hub.png"
+        
     }
 //     render() {
 //         return (
