@@ -22,9 +22,6 @@ if (Meteor.isClient) {
   //import 'react-s-alert/dist/s-alert-default.css';
 }
 
-
-
-
 //const SiteLayout = () => (
 export default class SiteLayout extends Component {
     LoginButtons = (id,hide)=>
@@ -45,27 +42,31 @@ export default class SiteLayout extends Component {
             }
         }
     }
-render(){
-   //     alert(Meteor.userId())
+
+    render(){
+    //alert(Meteor.userId())
     let id
     let hide;
+    
     try{
-         id = Meteor.userId();
-         hide =false;
-    }catch(e)
+        id = Meteor.userId();
+        hide =false;
+    }
+    catch(e)
     {
-         id = null
+        id = null
         hide =true;
     }
     return(
-  <div className="site-container">
-    <Helmet>
-      <title>Blockfreight</title>
-    </Helmet>
+    <div className="site-container">
+      <Helmet>
+        <title>Blockfreight</title>
+      </Helmet>
     
       <header id="main-header" data-height-onload={151} data-height-loaded="true" data-fixed-height-onload={150}
               style={{top: 0}}>
-          {/*
+          {
+          /*
           <div id="et-top-buttons">
               <div className="et_search_outer">
                   <div className="container et_search_form_container">
@@ -78,18 +79,24 @@ render(){
               </div>
               {this.LoginButtons(id,hide)}
           </div>
-        */}
+          */
+          }
+
           <div className="container clearfix et_menu_container">
-                {/*
-                <div className="logo_container">
-                  <span className="logo_helper"/>
-                  <a href="/">
-                      <img src="/images/blockfreight_logo_grey.svg" alt="Blockfreight, Inc. [BFT:XCPC]" id="logo"/>
-                  </a>
-                </div>
-              */}
-              <div id="et-top-navigation" data-height={182} data-fixed-height={182} style={{paddingLeft: 426}}>
-                  {/*
+            {
+            /*
+              <div className="logo_container">
+                <span className="logo_helper"/>
+                <a href="/">
+                  <img src="/images/blockfreight_logo_grey.svg" alt="Blockfreight, Inc. [BFT:XCPC]" id="logo"/>
+                </a>
+              </div>
+            */
+            }
+              
+            <div id="et-top-navigation" data-height={182} data-fixed-height={182} style={{paddingLeft: 426}}>
+                {
+                /*
                   <nav id="top-menu-nav">
                       <ul id="top-menu" className="nav">
                           <li id="menu-item-6630" className=""><a href="#">Connect</a>
@@ -170,7 +177,9 @@ render(){
                           </li>
                       </ul>
                   </nav>
-                  */}
+                */
+                }
+
                   {/*<div id="et_mobile_nav_menu">*/}
                       {/*<div className="mobile_nav closed">*/}
                           {/*<span className="select_page">Select Page</span>*/}
@@ -260,7 +269,9 @@ render(){
                               {/*</li>*/}
                           {/*</ul>*/}
                       {/*</div>*/}
-                  {/*</div><div id="et_mobile_nav_menu">*/}
+                  {/*</div>*/}
+                  
+                  {/*<div id="et_mobile_nav_menu">*/}
                       {/*<div className="mobile_nav closed">*/}
                           {/*<span className="select_page">Select Page</span>*/}
                           {/*<span className="mobile_menu_bar mobile_menu_bar_toggle"/>*/}
@@ -350,14 +361,13 @@ render(){
                           {/*</ul>*/}
                       {/*</div>*/}
                   {/*</div>*/}
-              </div>
-              {/* #et-top-navigation */}
-      {/* Top menu */}
-      {/* [responsive_menu_pro] */}
-      </div> {/* .container */}
+            </div>{/* #et-top-navigation */}
+          {/* Top menu */}
+          {/* [responsive_menu_pro] */}
+          </div> {/* .container */}
       </header>
-    
     <div className="header-container" />
+
     <div className="row body-container container">
         {/*<img src="https://i0.wp.com/blockfreight.com/wp-content/uploads/2017/04/shutterstock_564555790-e1512618174487.jpg?zoom=1.7999999523162842&amp;w=1080&amp;ssl=1" alt="" width="843" height="473" src-orig="https://i0.wp.com/blockfreight.com/wp-content/uploads/2017/04/shutterstock_564555790-e1512618174487.jpg?w=1080&amp;ssl=1" scale="1.7999999523162842"/>*/}
         <br/>
@@ -470,8 +480,9 @@ render(){
                 modules: ['/imports/ui/pages/signout.jsx'],
             })} />
             <Route component={NotFoundPage} />
-      </Switch>
+        </Switch>
     </div>
+
       <footer id="main-footer">
           <div className="container">
               <div id="footer-widgets" className="clearfix">
@@ -480,7 +491,9 @@ render(){
                           {'\u00A0'}
                       </div>
                   </div>
-                  {/*
+                  
+                  {
+                  /*
                   <div className="footer-widget">
                       <div id="nav_menu-2" className="fwidget et_pb_widget widget_nav_menu"><h4
                           className="title">Connect</h4>
@@ -505,9 +518,13 @@ render(){
                               </ul>
                           </div>
                       </div>
-                */}{/* end .fwidget */}{/*</div>*/}
+                  */
+                  }
+                  {/* end .fwidget */}{/*</div>*/}
                   {/* end .footer-widget */}
-                  {/*
+                  
+                  {
+                  /*
                   <div className="footer-widget">
                       <div id="nav_menu-4" className="fwidget et_pb_widget widget_nav_menu"><h4 className="title">The
                           Platform</h4>
@@ -528,10 +545,13 @@ render(){
                               </ul>
                           </div>
                       </div>
-                   */}   
-                    {/* end .fwidget */}{/*</div>*/}
+                  */
+                  }   
+                  {/* end .fwidget */}{/*</div>*/}
                   {/* end .footer-widget */}
-                  {/*}
+
+                  {
+                  /*
                   <div className="footer-widget">
                       <div id="nav_menu-5" className="fwidget et_pb_widget widget_nav_menu"><h4
                           className="title">Services</h4>
@@ -555,10 +575,13 @@ render(){
                               </ul>
                           </div>
                       </div>
-                      */}
-                      {/* end .fwidget */}{/*</div>*/}
+                  */
+                  }
+                  {/* end .fwidget */}{/*</div>*/}
                   {/* end .footer-widget */}
-                  {/*}
+                  
+                  {
+                  /*
                   <div className="footer-widget last">
                       <div id="nav_menu-6" className="fwidget et_pb_widget widget_nav_menu"><h4
                           className="title">Resources</h4>
@@ -585,16 +608,18 @@ render(){
                               </ul>
                           </div>
                       </div>
-                    */}
-                      {/* end .fwidget */}{/*</div>*/}
-                  {/* end .footer-widget */}    </div>
-              {/* #footer-widgets */}
-          </div>
-          {/* .container */}
+                  */
+                  }
+                  {/* end .fwidget */}{/*</div>*/}
+                  {/* end .footer-widget */}
+
+                </div>{/* #footer-widgets */}
+          </div>{/* .container */}
 
           {/*<div id="footer-top-2">*/}
-              {/*<div className="container clearfix">
-
+              {
+                /*
+                <div className="container clearfix">
                   <ul className="bf-footer-links">
                       <li className="bf-footer-link">
                           <a href="/status" title="Network Status"> STATUS |</a>
@@ -616,12 +641,16 @@ render(){
                   </p>
                   <p id="footer-info">
                   </p>
-              </div>*/} {/* .container */}
+                </div>
+                */
+              } {/* .container */}
           {/*</div>*/} {/* #footer-bottom-2 */}
+
           {/* Copyright | Social */}
           {/*<div id="footer-bottom">*/}
               {/*<div className="container clearfix">*/}
-                  {/*
+                  {
+                  /*
                   <ul className="et-social-icons">
                       <li className="et-social-icon">
                           <a href="http://twitter.com/blockfreight" className="icon">
@@ -654,13 +683,19 @@ render(){
                           </a>
                       </li>
                   </ul>
-                  */}
+                  */
+                  }
+
                   {/*End JCNM*/}
-                  {/*
+                  
+                  {
+                  /*
                   <p id="footer-info">
                     2017-2018 © ™ Blockfreight, Inc. | <a href="https://bitcoincash.org"><img src="/images/A_Bitcoin_Company.svg" alt="A Bitcoin Company" id="logo" data-actual-width={114} data-actual-height={13} scale={0} /></a> | made with ♥ in <a href="https://sfgov.org" title="digital | strategy | agency">San Francisco, CA.</a>
                   </p>
-                  */}
+                  */
+                  }
+
               {/*</div>*/} {/* .container */}
           {/*</div>*/} {/* #footer-bottom */}
       </footer>
