@@ -109,7 +109,6 @@ export default class Login extends Component {
                         </a>
                     </div>
                     
-                        
                     <div class="row">
                         <div class="img-holder">
                             <div class="bg"></div>
@@ -117,7 +116,7 @@ export default class Login extends Component {
                                 <img src="/iofrm-by-brandio/Template/images/graphic1.svg" alt=""/>
                             </div>
                         </div>
-                        <div class="form-holder">
+                        <div class="form-holder" id="form-holder">
                             <div class="form-content">
                                 <div class="form-items">
                                     <h3>Get more things done with Loggin platform.</h3>
@@ -141,9 +140,7 @@ export default class Login extends Component {
                     </div>
                 </div>
             </div>
-            
         )
-        
     }
 //     render() {
 //         return (

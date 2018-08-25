@@ -29,11 +29,18 @@
 
 html, body {
     height: 100%;
+    border: 5px solid yellow;
 }
 
 .form-body {
     background-color: #0093FF;
     height: 100%;
+    border: 5px solid brown;
+}
+
+#container {
+    display: flex;
+    border: 5px solid grey;
 }
 
 .form-body > .row {
@@ -51,6 +58,7 @@ html, body {
     left: 50px;
     right: initial;
     bottom: initial;
+    border: 5px solid pink;
 }
 
 .website-logo img {
@@ -230,6 +238,7 @@ html, body {
 .form-holder {
     margin-left: 550px;
     width: 100%;
+    border: 5px solid black;
 }
 
 .form-holder .form-content {
