@@ -89,13 +89,49 @@ export default class Login extends Component {
         return (
             
             <div id="container">
-                <h1>Test top</h1>
                 {scene}
                 
-                <img src="/iofrm-by-brandio/Template/images/graphic4.svg" width="100%"/>
+                {/*<img src="/iofrm-by-brandio/Template/images/graphic4.svg" width="100%"/>*/}
                 {/*<img src="/images/hub.png" width="100%"/>*/}
-                <h1>Test bottom</h1> 
-
+                
+                <div class="form-body" class="container-fluid">
+                    <div class="website-logo">
+                        <a href="index.html">
+                            <div class="logo">
+                                <img class="logo-size" src="/iofrm-by-brandio/Template/images/logo-light.svg" alt=""/>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="row">
+                        <div class="img-holder">
+                            <div class="bg"></div>
+                            <div class="info-holder">
+                                <img src="/iofrm-by-brandio/Template/images/graphic1.svg" alt=""/>
+                            </div>
+                        </div>
+                        <div class="form-holder">
+                            <div class="form-content">
+                                <div class="form-items">
+                                    <h3>Get more things done with Loggin platform.</h3>
+                                    <p>Access to the most powerfull tool in the entire design and web industry.</p>
+                                    <div class="page-links">
+                                        <a href="login4.html" class="active">Login</a><a href="register4.html">Register</a>
+                                    </div>
+                                    <form>
+                                        <input class="form-control" type="text" name="username" placeholder="E-mail Address" required/>
+                                        <input class="form-control" type="password" name="password" placeholder="Password" required/>
+                                        <div class="form-button">
+                                            <button id="submit" type="submit" class="ibtn">Login</button>
+                                        </div>
+                                    </form>
+                                    <div class="other-links">
+                                        <span>Or login with</span><a href="#">Facebook</a><a href="#">Google</a><a href="#">Linkedin</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
             
         )
