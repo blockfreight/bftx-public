@@ -593,7 +593,7 @@ render(){
           {/* .container */}
 
           <div id="footer-top-2">
-              <div className="container clearfix">
+              {/*<div className="container clearfix">
 
                   <ul className="bf-footer-links">
                       <li className="bf-footer-link">
@@ -616,7 +616,7 @@ render(){
                   </p>
                   <p id="footer-info">
                   </p>
-              </div> {/* .container */}
+              </div>*/} {/* .container */}
           </div> {/* #footer-bottom-2 */}
           {/* Copyright | Social */}
           <div id="footer-bottom">
