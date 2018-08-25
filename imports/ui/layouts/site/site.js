@@ -480,6 +480,7 @@ render(){
                           {'\u00A0'}
                       </div>
                   </div>
+                  {/*}
                   <div className="footer-widget">
                       <div id="nav_menu-2" className="fwidget et_pb_widget widget_nav_menu"><h4
                           className="title">Connect</h4>
@@ -504,7 +505,7 @@ render(){
                               </ul>
                           </div>
                       </div>
-                      {/* end .fwidget */}</div>
+                */}{/* end .fwidget */}{/*</div>*/}
                   {/* end .footer-widget */}
                   <div className="footer-widget">
                       <div id="nav_menu-4" className="fwidget et_pb_widget widget_nav_menu"><h4 className="title">The
