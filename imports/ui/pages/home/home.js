@@ -6,7 +6,7 @@ class HomePage extends Component {
   render() {
     return (
       <div className="home-page-container container">
-        <h1>Home Page</h1>
+        <h1>Welcome to the Blockfreight home Page</h1>
         <img src="/images/blockfreight_illustration.svg"width="100%"/>
       </div>
     );
