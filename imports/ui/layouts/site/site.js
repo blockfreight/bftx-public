@@ -619,8 +619,8 @@ render(){
               </div>*/} {/* .container */}
           {/*</div>*/} {/* #footer-bottom-2 */}
           {/* Copyright | Social */}
-          <div id="footer-bottom">
-              <div className="container clearfix">
+          {/*<div id="footer-bottom">*/}
+              {/*<div className="container clearfix">*/}
                   {/*
                   <ul className="et-social-icons">
                       <li className="et-social-icon">
@@ -661,8 +661,8 @@ render(){
                     2017-2018 © ™ Blockfreight, Inc. | <a href="https://bitcoincash.org"><img src="/images/A_Bitcoin_Company.svg" alt="A Bitcoin Company" id="logo" data-actual-width={114} data-actual-height={13} scale={0} /></a> | made with ♥ in <a href="https://sfgov.org" title="digital | strategy | agency">San Francisco, CA.</a>
                   </p>
                   */}
-              </div> {/* .container */}
-          </div> {/* #footer-bottom */}
+              {/*</div>*/} {/* .container */}
+          {/*</div>*/} {/* #footer-bottom */}
       </footer>
 
   </div>
