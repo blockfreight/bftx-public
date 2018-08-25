@@ -8,6 +8,11 @@ import { AccountScene } from './scenes/AccountScene.js'
 import { WelcomeScene } from './scenes/WelcomeScene.js'
 import {Meteor} from "meteor/meteor";
 
+import '../../../public/iofrm-by-brandio/Template/css/bootstrap.min.css'
+import '../../../public/iofrm-by-brandio/Template/css/fontawesome-all.min.css'
+import '../../../public/iofrm-by-brandio/Template/css/iofrm-style.css'
+import '../../../public/iofrm-by-brandio/Template/css/iofrm-theme4.css'
+
 export type RootProps = {}
 export type RootState = {
     account: EdgeUiAccount | void,
@@ -84,10 +89,9 @@ export default class Login extends Component {
                 void(setTimeout(()=>this.state.context.openLoginWindow({ onLogin: this.onLogin }),100))
                 // <WelcomeScene context={this.state.context} onLogin={this.onLogin} />
             )
-            
+        
         // this.onLogin()
         return (
-            
             <div id="container">
                 {scene}
                 
