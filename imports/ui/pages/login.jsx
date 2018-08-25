@@ -99,13 +99,17 @@ export default class Login extends Component {
                 {/*<img src="/images/hub.png" width="100%"/>*/}
                 
                 <div class="form-body" class="container-fluid">
+                    
                     <div class="website-logo">
-                        <a href="index.html">
+                        <a href="/iofrm-by-brandio/Template/index.html">
                             <div class="logo">
-                                <img class="logo-size" src="/iofrm-by-brandio/Template/images/logo-light.svg" alt=""/>
+                                {/*<img class="logo-size" src="/iofrm-by-brandio/Template/images/logo-light.svg" alt=""/>*/}
+                                <img src="/iofrm-by-brandio/Template/images/logo-dark.svg" alt=""/>
                             </div>
                         </a>
                     </div>
+                    
+                        
                     <div class="row">
                         <div class="img-holder">
                             <div class="bg"></div>
