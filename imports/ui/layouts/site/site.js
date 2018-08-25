@@ -480,7 +480,7 @@ render(){
                           {'\u00A0'}
                       </div>
                   </div>
-                  {/*}
+                  {/*
                   <div className="footer-widget">
                       <div id="nav_menu-2" className="fwidget et_pb_widget widget_nav_menu"><h4
                           className="title">Connect</h4>
@@ -592,7 +592,7 @@ render(){
           </div>
           {/* .container */}
 
-          <div id="footer-top-2">
+          {/*<div id="footer-top-2">*/}
               {/*<div className="container clearfix">
 
                   <ul className="bf-footer-links">
@@ -617,10 +617,11 @@ render(){
                   <p id="footer-info">
                   </p>
               </div>*/} {/* .container */}
-          </div> {/* #footer-bottom-2 */}
+          {/*</div>*/} {/* #footer-bottom-2 */}
           {/* Copyright | Social */}
           <div id="footer-bottom">
               <div className="container clearfix">
+                  {/*
                   <ul className="et-social-icons">
                       <li className="et-social-icon">
                           <a href="http://twitter.com/blockfreight" className="icon">
@@ -653,8 +654,13 @@ render(){
                           </a>
                       </li>
                   </ul>
-                  {/*End JCNM*/}					<p id="footer-info">
-                  2017-2018 © ™ Blockfreight, Inc. | <a href="https://bitcoincash.org"><img src="/images/A_Bitcoin_Company.svg" alt="A Bitcoin Company" id="logo" data-actual-width={114} data-actual-height={13} scale={0} /></a> | made with ♥ in <a href="https://sfgov.org" title="digital | strategy | agency">San Francisco, CA.</a>					</p>
+                  */}
+                  {/*End JCNM*/}
+                  {/*
+                  <p id="footer-info">
+                    2017-2018 © ™ Blockfreight, Inc. | <a href="https://bitcoincash.org"><img src="/images/A_Bitcoin_Company.svg" alt="A Bitcoin Company" id="logo" data-actual-width={114} data-actual-height={13} scale={0} /></a> | made with ♥ in <a href="https://sfgov.org" title="digital | strategy | agency">San Francisco, CA.</a>
+                  </p>
+                  */}
               </div> {/* .container */}
           </div> {/* #footer-bottom */}
       </footer>
