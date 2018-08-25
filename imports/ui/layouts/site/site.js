@@ -366,7 +366,7 @@ export default class SiteLayout extends Component {
           {/* [responsive_menu_pro] */}
           </div> {/* .container */}
       </header>
-    <div className="header-container" />
+    {/*<div className="header-container" />*/}
 
     <div className="row body-container container">
         {/*<img src="https://i0.wp.com/blockfreight.com/wp-content/uploads/2017/04/shutterstock_564555790-e1512618174487.jpg?zoom=1.7999999523162842&amp;w=1080&amp;ssl=1" alt="" width="843" height="473" src-orig="https://i0.wp.com/blockfreight.com/wp-content/uploads/2017/04/shutterstock_564555790-e1512618174487.jpg?w=1080&amp;ssl=1" scale="1.7999999523162842"/>*/}
@@ -485,13 +485,17 @@ export default class SiteLayout extends Component {
 
       <footer id="main-footer">
           <div className="container">
-              <div id="footer-widgets" className="clearfix">
+              {/*<div id="footer-widgets" className="clearfix">*/}
+                  {
+                  /*    
                   <div className="footer-widget" style={{height:1}}>
                       <div id="nav_menu-2" className="fwidget et_pb_widget widget_nav_menu">
                           {'\u00A0'}
                       </div>
                   </div>
-                  
+                  */
+                  }
+
                   {
                   /*
                   <div className="footer-widget">
@@ -613,7 +617,7 @@ export default class SiteLayout extends Component {
                   {/* end .fwidget */}{/*</div>*/}
                   {/* end .footer-widget */}
 
-                </div>{/* #footer-widgets */}
+              {/*</div>*/}{/* #footer-widgets */}
           </div>{/* .container */}
 
           {/*<div id="footer-top-2">*/}
