@@ -39,7 +39,13 @@ html, body {
 }
 
 #container {
-    display: flex;
+    position: fixed;
+    right: 1vw;
+    
+    
+    top: 100px;
+    height: 100%;
+    width: 90%;
     border: 5px solid grey;
 }
 
@@ -238,6 +244,7 @@ html, body {
 .form-holder {
     margin-left: 550px;
     width: 100%;
+
     border: 5px solid black;
 }
 
