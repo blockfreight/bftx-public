@@ -507,6 +507,7 @@ render(){
                       </div>
                 */}{/* end .fwidget */}{/*</div>*/}
                   {/* end .footer-widget */}
+                  {/*
                   <div className="footer-widget">
                       <div id="nav_menu-4" className="fwidget et_pb_widget widget_nav_menu"><h4 className="title">The
                           Platform</h4>
@@ -527,8 +528,10 @@ render(){
                               </ul>
                           </div>
                       </div>
-                      {/* end .fwidget */}</div>
+                   */}   
+                    {/* end .fwidget */}{/*</div>*/}
                   {/* end .footer-widget */}
+                  {/*}
                   <div className="footer-widget">
                       <div id="nav_menu-5" className="fwidget et_pb_widget widget_nav_menu"><h4
                           className="title">Services</h4>
@@ -552,8 +555,10 @@ render(){
                               </ul>
                           </div>
                       </div>
-                      {/* end .fwidget */}</div>
+                      */}
+                      {/* end .fwidget */}{/*</div>*/}
                   {/* end .footer-widget */}
+                  {/*}
                   <div className="footer-widget last">
                       <div id="nav_menu-6" className="fwidget et_pb_widget widget_nav_menu"><h4
                           className="title">Resources</h4>
@@ -580,7 +585,8 @@ render(){
                               </ul>
                           </div>
                       </div>
-                      {/* end .fwidget */}</div>
+                    */}
+                      {/* end .fwidget */}{/*</div>*/}
                   {/* end .footer-widget */}    </div>
               {/* #footer-widgets */}
           </div>
