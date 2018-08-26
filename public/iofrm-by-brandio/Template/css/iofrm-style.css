@@ -36,12 +36,6 @@ html, body {
     position: fixed;
     right: 0;
     height: 100%;
-    /*top: 100px;*/
-    /*margin-top: auto;*/
-    /*margin-top: 15vh;
-    margin-bottom: 17vh;
-    margin-right: 7vw;
-    margin-left: 15vw;*/
     border: 5px solid grey;
 }
 
@@ -186,6 +180,8 @@ html, body {
     padding: 60px;
     text-align: center;
     z-index: 999;
+
+    border: 5px solid green;
 }
 
 .img-holder .info-holder {
@@ -258,31 +254,33 @@ html, body {
 }
 
 #login-form-holder {
-    position: absolute;
+    position: relative;
+    /*position: absolute;*/
     right: 0;
-    /*padding-right: 2vw;*/
-    /*margin-left: 550px;*/
-    /*margin-right: 0 auto;*/
+    /*margin-right: 2vw;*/
+
+    /*margin-right: auto;*/
+    /*margin-right: 1px;*/
+    /*left: 550px;*/
+
+    margin-left: 550px;
+    /*margin-left: 5vw;*/
     max-width: 1300px;
+    width: 100%;
+    max-height: 1000px;
     height: 100%;
     border: 5px solid black;
+
+  /*  
+   float: right;
+   
+   padding: 0 10px;
+   -moz-box-sizing: border-box; *//*see padding explanation above*/
+   /*-webkit-box-sizing: border-box;
+   box-sizing: border-box;*/
 }
 
-.form-holder .form-content {
-    position: relative;
-    text-align: center;
-    display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 60px;
-    min-height: 100%;
-}
-
-#login-form-content {
+.form-holder .form-content, #login-form-content{
     position: relative;
     text-align: center;
     display: -webkit-box;
@@ -802,11 +800,11 @@ html, body {
         display: none;
     }
 
-    .form-holder {
+    .form-holder, #login-form-holder {
         margin-left: 0;
     }
 
-    .form-holder .form-content {
+    .form-holder .form-content, #login-form-content {
         padding: 125px 60px 60px;
     }
 
