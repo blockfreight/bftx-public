@@ -29,12 +29,18 @@
 
 html, body {
     height: 100%;
+
+    /*position: absolute;*/
+    /*overflow-y: scroll;*/
     border: 5px solid yellow;
 }
 
 #container {
     position: fixed;
     right: 0;
+
+    bottom: 0;    
+
     height: 100%;
     border: 5px solid grey;
 }
@@ -254,9 +260,18 @@ html, body {
 }
 
 #login-form-holder {
-    position: relative;
+    
     /*position: absolute;*/
+    
+    /*position: relative;*/
     right: 0;
+    
+    /*
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 550;
+    */
     /*margin-right: 2vw;*/
 
     /*margin-right: auto;*/
@@ -264,18 +279,35 @@ html, body {
     /*left: 550px;*/
 
     margin-left: 550px;
+    
     /*margin-left: 5vw;*/
     /*max-width: 1300px;*/
+    
     width: 100%;
     
-    /*max-height: 1000px;*/
-    height: 100%;
+    /*max-height: 700px;*/
+    /*height: 100%;*/
     border: 5px solid black;
 
     margin-top: 14vh;
+    overflow: auto;
 }
 
-.form-holder .form-content, #login-form-content{
+.form-holder .form-content {
+    position: relative;
+    text-align: center;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px;
+    min-height: 100%;
+}
+
+ #login-form-content{
     position: relative;
     text-align: center;
     display: -webkit-box;
