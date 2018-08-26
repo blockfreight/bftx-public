@@ -98,7 +98,7 @@ export default class Login extends Component {
                 {/*<img src="/iofrm-by-brandio/Template/images/graphic4.svg" width="100%"/>*/}
                 {/*<img src="/images/hub.png" width="100%"/>*/}
                 
-                <div class="form-body" class="container-fluid">
+                <div class="form-body" class="container-fluid" id="login-form-body">
                     
                     <div class="website-logo">
                         <a href="/iofrm-by-brandio/Template/index.html">
@@ -116,8 +116,8 @@ export default class Login extends Component {
                                 <img src="/iofrm-by-brandio/Template/images/graphic1.svg" alt=""/>
                             </div>
                         </div>
-                        <div class="form-holder">
-                            <div class="form-content">
+                        <div class="form-holder" id="login-form-holder" class="container-fluid">
+                            <div class="form-content" id="login-form-content">
                                 <div class="form-items">
                                     <h3>Get more things done with Loggin platform.</h3>
                                     <p>Access to the most powerfull tool in the entire design and web industry.</p>

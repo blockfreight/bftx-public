@@ -32,22 +32,30 @@ html, body {
     border: 5px solid yellow;
 }
 
+#container {
+    position: fixed;
+    right: 0;
+    height: 100%;
+    /*top: 100px;*/
+    /*margin-top: auto;*/
+    /*margin-top: 15vh;
+    margin-bottom: 17vh;
+    margin-right: 7vw;
+    margin-left: 15vw;*/
+    border: 5px solid grey;
+}
+
 .form-body {
     background-color: #0093FF;
     height: 100%;
     border: 5px solid brown;
 }
 
-#container {
-    /*position: fixed;
-    right: 1vw;
-    top: 100px;*/
-    /*margin-top: auto;*/
-    margin-top: 17vh;
-    margin-bottom: auto;
-    
-    
-    border: 5px solid grey;
+#login-form-body {
+    border: 5px solid brown;
+    position: absolute;
+    right: 0;
+    height: 100%;
 }
 
 .form-body > .row {
@@ -250,16 +258,31 @@ html, body {
 }
 
 #login-form-holder {
-    /*position: fixed;
-    padding-right: 2vw;*/
-    margin-left: 0px;
+    position: absolute;
+    right: 0;
+    /*padding-right: 2vw;*/
+    /*margin-left: 550px;*/
     /*margin-right: 0 auto;*/
-    width: 100%;
-
+    max-width: 1300px;
+    height: 100%;
     border: 5px solid black;
 }
 
 .form-holder .form-content {
+    position: relative;
+    text-align: center;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px;
+    min-height: 100%;
+}
+
+#login-form-content {
     position: relative;
     text-align: center;
     display: -webkit-box;
