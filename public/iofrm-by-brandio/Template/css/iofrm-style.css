@@ -39,13 +39,14 @@ html, body {
 }
 
 #container {
-    position: fixed;
+    /*position: fixed;
     right: 1vw;
+    top: 100px;*/
+    /*margin-top: auto;*/
+    margin-top: 17vh;
+    margin-bottom: auto;
     
     
-    top: 100px;
-    height: 100%;
-    width: 90%;
     border: 5px solid grey;
 }
 
@@ -243,6 +244,16 @@ html, body {
 
 .form-holder {
     margin-left: 550px;
+    width: 100%;
+
+    border: 5px solid black;
+}
+
+#login-form-holder {
+    /*position: fixed;
+    padding-right: 2vw;*/
+    margin-left: 0px;
+    /*margin-right: 0 auto;*/
     width: 100%;
 
     border: 5px solid black;
