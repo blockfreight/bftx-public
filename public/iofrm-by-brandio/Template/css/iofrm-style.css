@@ -34,7 +34,7 @@ html, body {
     /*overflow-y: scroll;*/
     border: 5px solid yellow;
 }
-
+/*
 #container {
     position: fixed;
     right: 0;
@@ -44,7 +44,7 @@ html, body {
     height: 100%;
     border: 5px solid grey;
 }
-
+*/
 .form-body {
     background-color: #0093FF;
     height: 100%;
@@ -53,9 +53,14 @@ html, body {
 
 #login-form-body {
     border: 5px solid brown;
-    position: absolute;
-    right: 0;
-    height: 100%;
+    /*position: absolute;*/
+    /*right: 0;*/
+    /*height: 100%;*/
+    
+    /*position: fixed;*/
+    /*margin: 0 auto;*/
+    height: 100vh;
+    width: 100vw;
 }
 
 .form-body > .row {
@@ -263,7 +268,7 @@ html, body {
     
     /*position: absolute;*/
     
-    /*position: relative;*/
+    position: relative;
     right: 0;
     
     /*

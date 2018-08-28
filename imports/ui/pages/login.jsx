@@ -92,22 +92,25 @@ export default class Login extends Component {
         
         // this.onLogin()
         return (
-            <div id="container" class="container-fluid">
+
+            
+            /*<div id="container" class="container-fluid">*/
+            <div className="container">
                 {scene}
                 
-                {/*<img src="/iofrm-by-brandio/Template/images/graphic4.svg" width="100%"/>*/}
-                {/*<img src="/images/hub.png" width="100%"/>*/}
+                
                 
                 <div class="form-body" class="container-fluid" id="login-form-body">
                     
                     <div class="website-logo">
                         <a href="/iofrm-by-brandio/Template/index.html">
                             <div class="logo">
-                                {/*<img class="logo-size" src="/iofrm-by-brandio/Template/images/logo-light.svg" alt=""/>*/}
+                                
                                 <img src="/iofrm-by-brandio/Template/images/logo-dark.svg" alt=""/>
                             </div>
                         </a>
                     </div>
+                
                     
                     <div class="row">
                         <div class="img-holder">
@@ -116,7 +119,7 @@ export default class Login extends Component {
                                 <img src="/iofrm-by-brandio/Template/images/graphic1.svg" alt=""/>
                             </div>
                         </div>
-                        <div class="form-holder" id="login-form-holder" class="container-fluid">
+                        <div class="form-holder" class="container-fluid" id="login-form-holder">
                             <div class="form-content" id="login-form-content">
                                 <div class="form-items">
                                     <h3>Get more things done with Loggin platform.</h3>
@@ -138,6 +141,7 @@ export default class Login extends Component {
                             </div>
                         </div>
                     </div>
+                    
                 </div>
             </div>
         )
