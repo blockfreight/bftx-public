@@ -9,7 +9,6 @@ import { WelcomeScene } from './scenes/WelcomeScene.js'
 import {Meteor} from "meteor/meteor";
 
 import 'bootstrap/dist/css/bootstrap.min.css'
-//import 'fontawesome/css/fontawesome-all.min.css'
 import 'font-awesome/css/font-awesome.min.css';
 import '../../../public/iofrm-by-brandio/Template/css/iofrm-style.css'
 import '../../../public/iofrm-by-brandio/Template/css/iofrm-theme4.css'
