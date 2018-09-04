@@ -63,312 +63,9 @@ export default class SiteLayout extends Component {
         <title>Blockfreight</title>
       </Helmet>
     
-      <header id="main-header" data-height-onload={151} data-height-loaded="true" data-fixed-height-onload={150}
-              style={{top: 0}}>
-          {
-          /*
-          <div id="et-top-buttons">
-              <div className="et_search_outer">
-                  <div className="container et_search_form_container">
-                      <form role="search" method="get" className="et-search-form" action="/">
-                          <input type="search" className="et-search-field" placeholder="Search …" defaultValue name="s"
-                                 title="Search for:"/>
-                      </form>
-                      <span className="et_close_search_field"/>
-                  </div>
-              </div>
-              {this.LoginButtons(id,hide)}
-          </div>
-          */
-          }
+      
 
-          <div className="container clearfix et_menu_container">
-            {
-            /*
-              <div className="logo_container">
-                <span className="logo_helper"/>
-                <a href="/">
-                  <img src="/images/blockfreight_logo_grey.svg" alt="Blockfreight, Inc. [BFT:XCPC]" id="logo"/>
-                </a>
-              </div>
-            */
-            }
-              
-            <div id="et-top-navigation" data-height={182} data-fixed-height={182} style={{paddingLeft: 426}}>
-                {
-                /*
-                  <nav id="top-menu-nav">
-                      <ul id="top-menu" className="nav">
-                          <li id="menu-item-6630" className=""><a href="#">Connect</a>
-                              <ul className="sub-menu">
-                                  <li id="menu-item-6535"
-                                      className="menu-item menu-item-type-post_type menu-item-object-page menu-item"><a
-                                      href="/investors/">Investors</a></li>
-                                  <li id="menu-item-6537"
-                                      className="menu-item menu-item-type-post_type menu-item-object-page menu-item"><a
-                                      href="/team/">Team</a></li>
-                                  <li id="menu-item-6536"
-                                      className="menu-item menu-item-type-post_type menu-item-object-page menu-item"><a
-                                      href="/news/">Latest News</a></li>
-                                  <li id="menu-item-6534"
-                                      className="menu-item menu-item-type-post_type menu-item-object-page menu-item"><a
-                                      href="/careers/">Careers</a></li>
-                                  <li id="menu-item-6606"
-                                      className="menu-item menu-item-type-post_type menu-item-object-page menu-item"><a
-                                      href="/press/">Press</a></li>
-                              </ul>
-                          </li>
-                          <li id="menu-item-6631" className=""><a href="#">The Platform</a>
-                              <ul className="sub-menu">
-                                  <li id="menu-item-6636"
-                                      className="menu-item menu-item-type-post_type menu-item-object-page menu-item-6636">
-                                      <a href="/developers/">Developers</a></li>
-                                  <li id="menu-item-6644"
-                                      className="menu-item menu-item-type-post_type menu-item-object-page menu-item-6644">
-                                      <a href="/protocol/">Protocol</a></li>
-                                  <li id="menu-item-6642"
-                                      className="menu-item menu-item-type-post_type menu-item-object-page menu-item-6642">
-                                      <a href="https://github.com/blockfreight">GitHub</a></li>
-                                  <li id="menu-item-6648"
-                                      className="menu-item menu-item-type-post_type menu-item-object-page menu-item-6648">
-                                      <a href="/wallets/">Wallets</a></li>
-                              </ul>
-                          </li>
-                          <li id="menu-item-6632" className=""><a href="#">Services</a>
-                              <ul className="sub-menu">
-                                  <li id="menu-item-6645"
-                                      className="menu-item menu-item-type-post_type menu-item-object-page menu-item-6645">
-                                      <a href="/research/">Research</a></li>
-                                  <li id="menu-item-6637"
-                                      className="menu-item menu-item-type-post_type menu-item-object-page menu-item-6637">
-                                      <a href="/development/">Development</a></li>
-                                  <li id="menu-item-6639"
-                                      className="menu-item menu-item-type-post_type menu-item-object-page menu-item-6639">
-                                      <a href="/engineering/">Engineering</a></li>
-                                  <li id="menu-item-6647"
-                                      className="menu-item menu-item-type-post_type menu-item-object-page menu-item-6647">
-                                      <a href="/training/">Training</a></li>
-                                  <li id="menu-item-6646"
-                                      className="menu-item menu-item-type-post_type menu-item-object-page menu-item-6646">
-                                      <a href="/support/">Support</a></li>
-                              </ul>
-                          </li>
-                          <li id="menu-item-6633" className=""><a href="#">Resources</a>
-                              <ul className="sub-menu">
-                                  <li id="menu-item-6634"
-                                      className="menu-item menu-item-type-post_type menu-item-object-page menu-item-6634">
-                                      <a href="/articles/">Articles</a></li>
-                                  <li id="menu-item-6643"
-                                      className="menu-item menu-item-type-post_type menu-item-object-page menu-item-6643">
-                                      <a href="/partners/">Partners</a></li>
-                                  <li id="menu-item-6638"
-                                      className="menu-item menu-item-type-post_type menu-item-object-page menu-item-6638">
-                                      <a href="/downloads/">Downloads</a></li>
-                                  <li id="menu-item-6641"
-                                      className="menu-item menu-item-type-post_type menu-item-object-page menu-item-6641">
-                                      <a href="/discussions/">Discussion</a></li>
-                                  <li id="menu-item-6635"
-                                      className="menu-item menu-item-type-post_type menu-item-object-page menu-item-6635">
-                                      <a href="/contact/">Contact Us</a></li>
-                                  <li id="menu-item-6640"
-                                      className="menu-item menu-item-type-post_type menu-item-object-page menu-item-6640">
-                                      <a href="/faq/">FAQ</a></li>
-                              </ul>
-                          </li>
-                      </ul>
-                  </nav>
-                */
-                }
-
-                  {/*<div id="et_mobile_nav_menu">*/}
-                      {/*<div className="mobile_nav closed">*/}
-                          {/*<span className="select_page">Select Page</span>*/}
-                          {/*<span className="mobile_menu_bar mobile_menu_bar_toggle"/>*/}
-                          {/*<ul id="mobile_menu" className="et_mobile_menu">*/}
-                              {/*<li id="menu-item-6630" className=""><a href="#">Connect</a>*/}
-                                  {/*<ul className="sub-menu">*/}
-                                      {/*<li id="menu-item-6535"*/}
-                                          {/*className="menu-item menu-item-type-post_type menu-item-object-page menu-item-6535">*/}
-                                          {/*<a href="/investors/">Investors</a></li>*/}
-                                      {/*<li id="menu-item-6537"*/}
-                                          {/*className="menu-item menu-item-type-post_type menu-item-object-page menu-item-6537">*/}
-                                          {/*<a href="/team/">Team</a></li>*/}
-                                      {/*<li id="menu-item-6536"*/}
-                                          {/*className="menu-item menu-item-type-post_type menu-item-object-page menu-item-6536">*/}
-                                          {/*<a href="/news/">Latest News</a></li>*/}
-                                      {/*<li id="menu-item-6534"*/}
-                                          {/*className="menu-item menu-item-type-post_type menu-item-object-page menu-item-6534">*/}
-                                          {/*<a href="/careers/">Careers</a></li>*/}
-                                      {/*<li id="menu-item-6606"*/}
-                                          {/*className="menu-item menu-item-type-post_type menu-item-object-page menu-item-6606">*/}
-                                          {/*<a href="/press/">Press</a></li>*/}
-                                  {/*</ul>*/}
-                              {/*</li>*/}
-                              {/*<li id="menu-item-6631"*/}
-                                  {/*className="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-6631">*/}
-                                  {/*<a href="#">The Platform</a>*/}
-                                  {/*<ul className="sub-menu">*/}
-                                      {/*<li id="menu-item-6636"*/}
-                                          {/*className="menu-item menu-item-type-post_type menu-item-object-page menu-item-6636">*/}
-                                          {/*<a href="/developers/">Developers</a></li>*/}
-                                      {/*<li id="menu-item-6644"*/}
-                                          {/*className="menu-item menu-item-type-post_type menu-item-object-page menu-item-6644">*/}
-                                          {/*<a href="/protocol/">Protocol</a></li>*/}
-                                      {/*<li id="menu-item-6642"*/}
-                                          {/*className="menu-item menu-item-type-post_type menu-item-object-page menu-item-6642">*/}
-                                          {/*<a href="/github/">GitHub</a></li>*/}
-                                      {/*<li id="menu-item-6648"*/}
-                                          {/*className="menu-item menu-item-type-post_type menu-item-object-page menu-item-6648">*/}
-                                          {/*<a href="/wallets/">Wallets</a></li>*/}
-                                  {/*</ul>*/}
-                              {/*</li>*/}
-                              {/*<li id="menu-item-6632"*/}
-                                  {/*className="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-6632">*/}
-                                  {/*<a href="#">Services</a>*/}
-                                  {/*<ul className="sub-menu">*/}
-                                      {/*<li id="menu-item-6645"*/}
-                                          {/*className="menu-item menu-item-type-post_type menu-item-object-page menu-item-6645">*/}
-                                          {/*<a href="/research/">Research</a></li>*/}
-                                      {/*<li id="menu-item-6637"*/}
-                                          {/*className="menu-item menu-item-type-post_type menu-item-object-page menu-item-6637">*/}
-                                          {/*<a href="/development/">Development</a></li>*/}
-                                      {/*<li id="menu-item-6639"*/}
-                                          {/*className="menu-item menu-item-type-post_type menu-item-object-page menu-item-6639">*/}
-                                          {/*<a href="/engineering/">Engineering</a></li>*/}
-                                      {/*<li id="menu-item-6647"*/}
-                                          {/*className="menu-item menu-item-type-post_type menu-item-object-page menu-item-6647">*/}
-                                          {/*<a href="/training/">Training</a></li>*/}
-                                      {/*<li id="menu-item-6646"*/}
-                                          {/*className="menu-item menu-item-type-post_type menu-item-object-page menu-item-6646">*/}
-                                          {/*<a href="/support/">Support</a></li>*/}
-                                  {/*</ul>*/}
-                              {/*</li>*/}
-                              {/*<li id="menu-item-6633"*/}
-                                  {/*className="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-6633">*/}
-                                  {/*<a href="#">Resources</a>*/}
-                                  {/*<ul className="sub-menu">*/}
-                                      {/*<li id="menu-item-6634"*/}
-                                          {/*className="menu-item menu-item-type-post_type menu-item-object-page menu-item-6634">*/}
-                                          {/*<a href="/articles/">Articles</a></li>*/}
-                                      {/*<li id="menu-item-6643"*/}
-                                          {/*className="menu-item menu-item-type-post_type menu-item-object-page menu-item-6643">*/}
-                                          {/*<a href="/partners/">Partners</a></li>*/}
-                                      {/*<li id="menu-item-6638"*/}
-                                          {/*className="menu-item menu-item-type-post_type menu-item-object-page menu-item-6638">*/}
-                                          {/*<a href="/downloads/">Downloads</a></li>*/}
-                                      {/*<li id="menu-item-6641"*/}
-                                          {/*className="menu-item menu-item-type-post_type menu-item-object-page menu-item-6641">*/}
-                                          {/*<a href="/discussions/">Discussion</a></li>*/}
-                                      {/*<li id="menu-item-6635"*/}
-                                          {/*className="menu-item menu-item-type-post_type menu-item-object-page menu-item-6635">*/}
-                                          {/*<a href="/contact/">Contact Us</a></li>*/}
-                                      {/*<li id="menu-item-6640"*/}
-                                          {/*className="menu-item menu-item-type-post_type menu-item-object-page menu-item-6640">*/}
-                                          {/*<a href="/faq/">FAQ</a></li>*/}
-                                  {/*</ul>*/}
-                              {/*</li>*/}
-                          {/*</ul>*/}
-                      {/*</div>*/}
-                  {/*</div>*/}
-                  
-                  {/*<div id="et_mobile_nav_menu">*/}
-                      {/*<div className="mobile_nav closed">*/}
-                          {/*<span className="select_page">Select Page</span>*/}
-                          {/*<span className="mobile_menu_bar mobile_menu_bar_toggle"/>*/}
-                          {/*<ul id="mobile_menu" className="et_mobile_menu">*/}
-                              {/*<li id="menu-item-6630" className=""><a href="#">Connect</a>*/}
-                                  {/*<ul className="sub-menu">*/}
-                                      {/*<li id="menu-item-6535"*/}
-                                          {/*className="menu-item menu-item-type-post_type menu-item-object-page menu-item-6535">*/}
-                                          {/*<a href="/investors/">Investors</a></li>*/}
-                                      {/*<li id="menu-item-6537"*/}
-                                          {/*className="menu-item menu-item-type-post_type menu-item-object-page menu-item-6537">*/}
-                                          {/*<a href="/team/">Team</a></li>*/}
-                                      {/*<li id="menu-item-6536"*/}
-                                          {/*className="menu-item menu-item-type-post_type menu-item-object-page menu-item-6536">*/}
-                                          {/*<a href="/news/">Latest News</a></li>*/}
-                                      {/*<li id="menu-item-6534"*/}
-                                          {/*className="menu-item menu-item-type-post_type menu-item-object-page menu-item-6534">*/}
-                                          {/*<a href="/careers/">Careers</a></li>*/}
-                                      {/*<li id="menu-item-6606"*/}
-                                          {/*className="menu-item menu-item-type-post_type menu-item-object-page menu-item-6606">*/}
-                                          {/*<a href="/press/">Press</a></li>*/}
-                                  {/*</ul>*/}
-                              {/*</li>*/}
-                              {/*<li id="menu-item-6631"*/}
-                                  {/*className="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-6631">*/}
-                                  {/*<a href="#">The Platform</a>*/}
-                                  {/*<ul className="sub-menu">*/}
-                                      {/*<li id="menu-item-6636"*/}
-                                          {/*className="menu-item menu-item-type-post_type menu-item-object-page menu-item-6636">*/}
-                                          {/*<a href="/developers/">Developers</a></li>*/}
-                                      {/*<li id="menu-item-6644"*/}
-                                          {/*className="menu-item menu-item-type-post_type menu-item-object-page menu-item-6644">*/}
-                                          {/*<a href="/protocol/">Protocol</a></li>*/}
-                                      {/*<li id="menu-item-6642"*/}
-                                          {/*className="menu-item menu-item-type-post_type menu-item-object-page menu-item-6642">*/}
-                                          {/*<a href="/github/">GitHub</a></li>*/}
-                                      {/*<li id="menu-item-6648"*/}
-                                          {/*className="menu-item menu-item-type-post_type menu-item-object-page menu-item-6648">*/}
-                                          {/*<a href="/wallets/">Wallets</a></li>*/}
-                                  {/*</ul>*/}
-                              {/*</li>*/}
-                              {/*<li id="menu-item-6632"*/}
-                                  {/*className="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-6632">*/}
-                                  {/*<a href="#">Services</a>*/}
-                                  {/*<ul className="sub-menu">*/}
-                                      {/*<li id="menu-item-6645"*/}
-                                          {/*className="menu-item menu-item-type-post_type menu-item-object-page menu-item-6645">*/}
-                                          {/*<a href="/research/">Research</a></li>*/}
-                                      {/*<li id="menu-item-6637"*/}
-                                          {/*className="menu-item menu-item-type-post_type menu-item-object-page menu-item-6637">*/}
-                                          {/*<a href="/development/">Development</a></li>*/}
-                                      {/*<li id="menu-item-6639"*/}
-                                          {/*className="menu-item menu-item-type-post_type menu-item-object-page menu-item-6639">*/}
-                                          {/*<a href="/engineering/">Engineering</a></li>*/}
-                                      {/*<li id="menu-item-6647"*/}
-                                          {/*className="menu-item menu-item-type-post_type menu-item-object-page menu-item-6647">*/}
-                                          {/*<a href="/training/">Training</a></li>*/}
-                                      {/*<li id="menu-item-6646"*/}
-                                          {/*className="menu-item menu-item-type-post_type menu-item-object-page menu-item-6646">*/}
-                                          {/*<a href="/support/">Support</a></li>*/}
-                                  {/*</ul>*/}
-                              {/*</li>*/}
-                              {/*<li id="menu-item-6633"*/}
-                                  {/*className="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-6633">*/}
-                                  {/*<a href="#">Resources</a>*/}
-                                  {/*<ul className="sub-menu">*/}
-                                      {/*<li id="menu-item-6634"*/}
-                                          {/*className="menu-item menu-item-type-post_type menu-item-object-page menu-item-6634">*/}
-                                          {/*<a href="/articles/">Articles</a></li>*/}
-                                      {/*<li id="menu-item-6643"*/}
-                                          {/*className="menu-item menu-item-type-post_type menu-item-object-page menu-item-6643">*/}
-                                          {/*<a href="/partners/">Partners</a></li>*/}
-                                      {/*<li id="menu-item-6638"*/}
-                                          {/*className="menu-item menu-item-type-post_type menu-item-object-page menu-item-6638">*/}
-                                          {/*<a href="/downloads/">Downloads</a></li>*/}
-                                      {/*<li id="menu-item-6641"*/}
-                                          {/*className="menu-item menu-item-type-post_type menu-item-object-page menu-item-6641">*/}
-                                          {/*<a href="/discussions/">Discussion</a></li>*/}
-                                      {/*<li id="menu-item-6635"*/}
-                                          {/*className="menu-item menu-item-type-post_type menu-item-object-page menu-item-6635">*/}
-                                          {/*<a href="/contact/">Contact Us</a></li>*/}
-                                      {/*<li id="menu-item-6640"*/}
-                                          {/*className="menu-item menu-item-type-post_type menu-item-object-page menu-item-6640">*/}
-                                          {/*<a href="/faq/">FAQ</a></li>*/}
-                                  {/*</ul>*/}
-                              {/*</li>*/}
-                          {/*</ul>*/}
-                      {/*</div>*/}
-                  {/*</div>*/}
-            </div>{/* #et-top-navigation */}
-          {/* Top menu */}
-          {/* [responsive_menu_pro] */}
-          </div> {/* .container */}
-      </header>
-    {/*<div className="header-container" />*/}
-
-    <div className="row body-container container">
+      <div className="row body-container container">
         {/*<img src="https://i0.wp.com/blockfreight.com/wp-content/uploads/2017/04/shutterstock_564555790-e1512618174487.jpg?zoom=1.7999999523162842&amp;w=1080&amp;ssl=1" alt="" width="843" height="473" src-orig="https://i0.wp.com/blockfreight.com/wp-content/uploads/2017/04/shutterstock_564555790-e1512618174487.jpg?w=1080&amp;ssl=1" scale="1.7999999523162842"/>*/}
         <br/>
         <Switch>
@@ -481,12 +178,341 @@ export default class SiteLayout extends Component {
             })} />
             <Route component={NotFoundPage} />
         </Switch>
-    </div>
+      </div>
 
-      <footer id="main-footer">
+      
+    
+    </div>
+    );
+
+  }
+}
+// export default SiteLayout;
+//
+// (function($) {
+//     function setup_collapsible_submenus() {
+//         $( "<div class='sub-menu-toggle'></div>" ).insertBefore( "#main-header #mobile_menu.et_mobile_menu .menu-item-has-children > a" );
+//         $( "#main-header #mobile_menu.et_mobile_menu .sub-menu-toggle" ).click(function () {
+//             $(this).toggleClass("popped");
+//         });
+//     }
+//     $(document).ready(function() {
+//         setup_collapsible_submenus();
+//     });
+//     $(window).load(function() {
+//         setup_collapsible_submenus();
+//     });
+// })
+//
+
+/* 
+
+<header id="main-header" data-height-onload={151} data-height-loaded="true" data-fixed-height-onload={150}
+              style={{top: 0}}>
+          
+          <div id="et-top-buttons">
+              <div className="et_search_outer">
+                  <div className="container et_search_form_container">
+                      <form role="search" method="get" className="et-search-form" action="/">
+                          <input type="search" className="et-search-field" placeholder="Search …" defaultValue name="s"
+                                 title="Search for:"/>
+                      </form>
+                      <span className="et_close_search_field"/>
+                  </div>
+              </div>
+              {this.LoginButtons(id,hide)}
+          </div>
+          
+
+        <div className="container clearfix et_menu_container">
+          
+            <div className="logo_container">
+              <span className="logo_helper"/>
+              <a href="/">
+                <img src="/images/blockfreight_logo_grey.svg" alt="Blockfreight, Inc. [BFT:XCPC]" id="logo"/>
+              </a>
+            </div>
+                      
+            <div id="et-top-navigation" data-height={182} data-fixed-height={182} style={{paddingLeft: 426}}>
+              
+                <nav id="top-menu-nav">
+                    <ul id="top-menu" className="nav">
+                        <li id="menu-item-6630" className=""><a href="#">Connect</a>
+                            <ul className="sub-menu">
+                                <li id="menu-item-6535"
+                                    className="menu-item menu-item-type-post_type menu-item-object-page menu-item"><a
+                                    href="/investors/">Investors</a></li>
+                                <li id="menu-item-6537"
+                                    className="menu-item menu-item-type-post_type menu-item-object-page menu-item"><a
+                                    href="/team/">Team</a></li>
+                                <li id="menu-item-6536"
+                                    className="menu-item menu-item-type-post_type menu-item-object-page menu-item"><a
+                                    href="/news/">Latest News</a></li>
+                                <li id="menu-item-6534"
+                                    className="menu-item menu-item-type-post_type menu-item-object-page menu-item"><a
+                                    href="/careers/">Careers</a></li>
+                                <li id="menu-item-6606"
+                                    className="menu-item menu-item-type-post_type menu-item-object-page menu-item"><a
+                                    href="/press/">Press</a></li>
+                            </ul>
+                        </li>
+                        <li id="menu-item-6631" className=""><a href="#">The Platform</a>
+                            <ul className="sub-menu">
+                                <li id="menu-item-6636"
+                                    className="menu-item menu-item-type-post_type menu-item-object-page menu-item-6636">
+                                    <a href="/developers/">Developers</a></li>
+                                <li id="menu-item-6644"
+                                    className="menu-item menu-item-type-post_type menu-item-object-page menu-item-6644">
+                                    <a href="/protocol/">Protocol</a></li>
+                                <li id="menu-item-6642"
+                                    className="menu-item menu-item-type-post_type menu-item-object-page menu-item-6642">
+                                    <a href="https://github.com/blockfreight">GitHub</a></li>
+                                <li id="menu-item-6648"
+                                    className="menu-item menu-item-type-post_type menu-item-object-page menu-item-6648">
+                                    <a href="/wallets/">Wallets</a></li>
+                            </ul>
+                        </li>
+                        <li id="menu-item-6632" className=""><a href="#">Services</a>
+                            <ul className="sub-menu">
+                                <li id="menu-item-6645"
+                                    className="menu-item menu-item-type-post_type menu-item-object-page menu-item-6645">
+                                    <a href="/research/">Research</a></li>
+                                <li id="menu-item-6637"
+                                    className="menu-item menu-item-type-post_type menu-item-object-page menu-item-6637">
+                                    <a href="/development/">Development</a></li>
+                                <li id="menu-item-6639"
+                                    className="menu-item menu-item-type-post_type menu-item-object-page menu-item-6639">
+                                    <a href="/engineering/">Engineering</a></li>
+                                <li id="menu-item-6647"
+                                    className="menu-item menu-item-type-post_type menu-item-object-page menu-item-6647">
+                                    <a href="/training/">Training</a></li>
+                                <li id="menu-item-6646"
+                                    className="menu-item menu-item-type-post_type menu-item-object-page menu-item-6646">
+                                    <a href="/support/">Support</a></li>
+                            </ul>
+                        </li>
+                        <li id="menu-item-6633" className=""><a href="#">Resources</a>
+                            <ul className="sub-menu">
+                                <li id="menu-item-6634"
+                                    className="menu-item menu-item-type-post_type menu-item-object-page menu-item-6634">
+                                    <a href="/articles/">Articles</a></li>
+                                <li id="menu-item-6643"
+                                    className="menu-item menu-item-type-post_type menu-item-object-page menu-item-6643">
+                                    <a href="/partners/">Partners</a></li>
+                                <li id="menu-item-6638"
+                                    className="menu-item menu-item-type-post_type menu-item-object-page menu-item-6638">
+                                    <a href="/downloads/">Downloads</a></li>
+                                <li id="menu-item-6641"
+                                    className="menu-item menu-item-type-post_type menu-item-object-page menu-item-6641">
+                                    <a href="/discussions/">Discussion</a></li>
+                                <li id="menu-item-6635"
+                                    className="menu-item menu-item-type-post_type menu-item-object-page menu-item-6635">
+                                    <a href="/contact/">Contact Us</a></li>
+                                <li id="menu-item-6640"
+                                    className="menu-item menu-item-type-post_type menu-item-object-page menu-item-6640">
+                                    <a href="/faq/">FAQ</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+*/              
+
+                /*<div id="et_mobile_nav_menu">*/
+                    /*<div className="mobile_nav closed">*/
+                        /*<span className="select_page">Select Page</span>*/
+                        /*<span className="mobile_menu_bar mobile_menu_bar_toggle"/>*/
+                        /*<ul id="mobile_menu" className="et_mobile_menu">*/
+                            /*<li id="menu-item-6630" className=""><a href="#">Connect</a>*/
+                                /*<ul className="sub-menu">*/
+                                    /*<li id="menu-item-6535"*/
+                                        /*className="menu-item menu-item-type-post_type menu-item-object-page menu-item-6535">*/
+                                        /*<a href="/investors/">Investors</a></li>*/
+                                    /*<li id="menu-item-6537"*/
+                                        /*className="menu-item menu-item-type-post_type menu-item-object-page menu-item-6537">*/
+                                        /*<a href="/team/">Team</a></li>*/
+                                    /*<li id="menu-item-6536"*/
+                                        /*className="menu-item menu-item-type-post_type menu-item-object-page menu-item-6536">*/
+                                        /*<a href="/news/">Latest News</a></li>*/
+                                    /*<li id="menu-item-6534"*/
+                                        /*className="menu-item menu-item-type-post_type menu-item-object-page menu-item-6534">*/
+                                        /*<a href="/careers/">Careers</a></li>*/
+                                    /*<li id="menu-item-6606"*/
+                                        /*className="menu-item menu-item-type-post_type menu-item-object-page menu-item-6606">*/
+                                        /*<a href="/press/">Press</a></li>*/
+                                /*</ul>*/
+                            /*</li>*/
+                            /*<li id="menu-item-6631"*/
+                                /*className="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-6631">*/
+                                /*<a href="#">The Platform</a>*/
+                                /*<ul className="sub-menu">*/
+                                    /*<li id="menu-item-6636"*/
+                                        /*className="menu-item menu-item-type-post_type menu-item-object-page menu-item-6636">*/
+                                        /*<a href="/developers/">Developers</a></li>*/
+                                    /*<li id="menu-item-6644"*/
+                                        /*className="menu-item menu-item-type-post_type menu-item-object-page menu-item-6644">*/
+                                        /*<a href="/protocol/">Protocol</a></li>*/
+                                    /*<li id="menu-item-6642"*/
+                                        /*className="menu-item menu-item-type-post_type menu-item-object-page menu-item-6642">*/
+                                        /*<a href="/github/">GitHub</a></li>*/
+                                    /*<li id="menu-item-6648"*/
+                                        /*className="menu-item menu-item-type-post_type menu-item-object-page menu-item-6648">*/
+                                        /*<a href="/wallets/">Wallets</a></li>*/
+                                /*</ul>*/
+                            /*</li>*/
+                            /*<li id="menu-item-6632"*/
+                                /*className="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-6632">*/
+                                /*<a href="#">Services</a>*/
+                                /*<ul className="sub-menu">*/
+                                    /*<li id="menu-item-6645"*/
+                                        /*className="menu-item menu-item-type-post_type menu-item-object-page menu-item-6645">*/
+                                        /*<a href="/research/">Research</a></li>*/
+                                    /*<li id="menu-item-6637"*/
+                                        /*className="menu-item menu-item-type-post_type menu-item-object-page menu-item-6637">*/
+                                        /*<a href="/development/">Development</a></li>*/
+                                    /*<li id="menu-item-6639"*/
+                                        /*className="menu-item menu-item-type-post_type menu-item-object-page menu-item-6639">*/
+                                        /*<a href="/engineering/">Engineering</a></li>*/
+                                    /*<li id="menu-item-6647"*/
+                                        /*className="menu-item menu-item-type-post_type menu-item-object-page menu-item-6647">*/
+                                        /*<a href="/training/">Training</a></li>*/
+                                    /*<li id="menu-item-6646"*/
+                                        /*className="menu-item menu-item-type-post_type menu-item-object-page menu-item-6646">*/
+                                        /*<a href="/support/">Support</a></li>*/
+                                /*</ul>*/
+                            /*</li>*/
+                            /*<li id="menu-item-6633"*/
+                                /*className="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-6633">*/
+                                /*<a href="#">Resources</a>*/
+                                /*<ul className="sub-menu">*/
+                                    /*<li id="menu-item-6634"*/
+                                        /*className="menu-item menu-item-type-post_type menu-item-object-page menu-item-6634">*/
+                                        /*<a href="/articles/">Articles</a></li>*/
+                                    /*<li id="menu-item-6643"*/
+                                        /*className="menu-item menu-item-type-post_type menu-item-object-page menu-item-6643">*/
+                                        /*<a href="/partners/">Partners</a></li>*/
+                                    /*<li id="menu-item-6638"*/
+                                        /*className="menu-item menu-item-type-post_type menu-item-object-page menu-item-6638">*/
+                                        /*<a href="/downloads/">Downloads</a></li>*/
+                                    /*<li id="menu-item-6641"*/
+                                        /*className="menu-item menu-item-type-post_type menu-item-object-page menu-item-6641">*/
+                                        /*<a href="/discussions/">Discussion</a></li>*/
+                                    /*<li id="menu-item-6635"*/
+                                        /*className="menu-item menu-item-type-post_type menu-item-object-page menu-item-6635">*/
+                                        /*<a href="/contact/">Contact Us</a></li>*/
+                                    /*<li id="menu-item-6640"*/
+                                        /*className="menu-item menu-item-type-post_type menu-item-object-page menu-item-6640">*/
+                                        /*<a href="/faq/">FAQ</a></li>*/
+                                /*</ul>*/
+                            /*</li>*/
+                        /*</ul>*/
+                    /*</div>*/
+                /*</div>*/
+                
+                /*<div id="et_mobile_nav_menu">*/
+                    /*<div className="mobile_nav closed">*/
+                        /*<span className="select_page">Select Page</span>*/
+                        /*<span className="mobile_menu_bar mobile_menu_bar_toggle"/>*/
+                        /*<ul id="mobile_menu" className="et_mobile_menu">*/
+                            /*<li id="menu-item-6630" className=""><a href="#">Connect</a>*/
+                                /*<ul className="sub-menu">*/
+                                    /*<li id="menu-item-6535"*/
+                                        /*className="menu-item menu-item-type-post_type menu-item-object-page menu-item-6535">*/
+                                        /*<a href="/investors/">Investors</a></li>*/
+                                    /*<li id="menu-item-6537"*/
+                                        /*className="menu-item menu-item-type-post_type menu-item-object-page menu-item-6537">*/
+                                        /*<a href="/team/">Team</a></li>*/
+                                    /*<li id="menu-item-6536"*/
+                                        /*className="menu-item menu-item-type-post_type menu-item-object-page menu-item-6536">*/
+                                        /*<a href="/news/">Latest News</a></li>*/
+                                    /*<li id="menu-item-6534"*/
+                                        /*className="menu-item menu-item-type-post_type menu-item-object-page menu-item-6534">*/
+                                        /*<a href="/careers/">Careers</a></li>*/
+                                    /*<li id="menu-item-6606"*/
+                                        /*className="menu-item menu-item-type-post_type menu-item-object-page menu-item-6606">*/
+                                        /*<a href="/press/">Press</a></li>*/
+                                /*</ul>*/
+                            /*</li>*/
+                            /*<li id="menu-item-6631"*/
+                                /*className="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-6631">*/
+                                /*<a href="#">The Platform</a>*/
+                                /*<ul className="sub-menu">*/
+                                    /*<li id="menu-item-6636"*/
+                                        /*className="menu-item menu-item-type-post_type menu-item-object-page menu-item-6636">*/
+                                        /*<a href="/developers/">Developers</a></li>*/
+                                    /*<li id="menu-item-6644"*/
+                                        /*className="menu-item menu-item-type-post_type menu-item-object-page menu-item-6644">*/
+                                        /*<a href="/protocol/">Protocol</a></li>*/
+                                    /*<li id="menu-item-6642"*/
+                                        /*className="menu-item menu-item-type-post_type menu-item-object-page menu-item-6642">*/
+                                        /*<a href="/github/">GitHub</a></li>*/
+                                    /*<li id="menu-item-6648"*/
+                                        /*className="menu-item menu-item-type-post_type menu-item-object-page menu-item-6648">*/
+                                        /*<a href="/wallets/">Wallets</a></li>*/
+                                /*</ul>*/
+                            /*</li>*/
+                            /*<li id="menu-item-6632"*/
+                                /*className="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-6632">*/
+                                /*<a href="#">Services</a>*/
+                                /*<ul className="sub-menu">*/
+                                    /*<li id="menu-item-6645"*/
+                                        /*className="menu-item menu-item-type-post_type menu-item-object-page menu-item-6645">*/
+                                        /*<a href="/research/">Research</a></li>*/
+                                    /*<li id="menu-item-6637"*/
+                                        /*className="menu-item menu-item-type-post_type menu-item-object-page menu-item-6637">*/
+                                        /*<a href="/development/">Development</a></li>*/
+                                    /*<li id="menu-item-6639"*/
+                                        /*className="menu-item menu-item-type-post_type menu-item-object-page menu-item-6639">*/
+                                        /*<a href="/engineering/">Engineering</a></li>*/
+                                    /*<li id="menu-item-6647"*/
+                                        /*className="menu-item menu-item-type-post_type menu-item-object-page menu-item-6647">*/
+                                        /*<a href="/training/">Training</a></li>*/
+                                    /*<li id="menu-item-6646"*/
+                                        /*className="menu-item menu-item-type-post_type menu-item-object-page menu-item-6646">*/
+                                        /*<a href="/support/">Support</a></li>*/
+                                /*</ul>*/
+                            /*</li>*/
+                            /*<li id="menu-item-6633"*/
+                                /*className="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-6633">*/
+                                /*<a href="#">Resources</a>*/
+                                /*<ul className="sub-menu">*/
+                                    /*<li id="menu-item-6634"*/
+                                        /*className="menu-item menu-item-type-post_type menu-item-object-page menu-item-6634">*/
+                                        /*<a href="/articles/">Articles</a></li>*/
+                                    /*<li id="menu-item-6643"*/
+                                        /*className="menu-item menu-item-type-post_type menu-item-object-page menu-item-6643">*/
+                                        /*<a href="/partners/">Partners</a></li>*/
+                                    /*<li id="menu-item-6638"*/
+                                        /*className="menu-item menu-item-type-post_type menu-item-object-page menu-item-6638">*/
+                                        /*<a href="/downloads/">Downloads</a></li>*/
+                                    /*<li id="menu-item-6641"*/
+                                        /*className="menu-item menu-item-type-post_type menu-item-object-page menu-item-6641">*/
+                                        /*<a href="/discussions/">Discussion</a></li>*/
+                                    /*<li id="menu-item-6635"*/
+                                        /*className="menu-item menu-item-type-post_type menu-item-object-page menu-item-6635">*/
+                                        /*<a href="/contact/">Contact Us</a></li>*/
+                                    /*<li id="menu-item-6640"*/
+                                        /*className="menu-item menu-item-type-post_type menu-item-object-page menu-item-6640">*/
+                                        /*<a href="/faq/">FAQ</a></li>*/
+                                /*</ul>*/
+                            /*</li>*/
+                        /*</ul>*/
+                    /*</div>*/
+                /*</div>*/
+          /*</div>/* #et-top-navigation */
+        /* Top menu */
+        /* [responsive_menu_pro] */
+        /*</div> /* .container */
+    /*</header>
+  /*<div className="header-container" />*/
+
+
+    /*
+<footer id="main-footer">
           <div className="container">
-              {/*<div id="footer-widgets" className="clearfix">*/}
-                  {
+    */
+
+              /*<div id="footer-widgets" className="clearfix">*/
+                  
                   /*    
                   <div className="footer-widget" style={{height:1}}>
                       <div id="nav_menu-2" className="fwidget et_pb_widget widget_nav_menu">
@@ -494,9 +520,9 @@ export default class SiteLayout extends Component {
                       </div>
                   </div>
                   */
-                  }
+                  
 
-                  {
+                  
                   /*
                   <div className="footer-widget">
                       <div id="nav_menu-2" className="fwidget et_pb_widget widget_nav_menu"><h4
@@ -523,11 +549,11 @@ export default class SiteLayout extends Component {
                           </div>
                       </div>
                   */
-                  }
-                  {/* end .fwidget */}{/*</div>*/}
-                  {/* end .footer-widget */}
                   
-                  {
+                  /* end .fwidget *//*</div>*/
+                  /* end .footer-widget */
+                  
+                  
                   /*
                   <div className="footer-widget">
                       <div id="nav_menu-4" className="fwidget et_pb_widget widget_nav_menu"><h4 className="title">The
@@ -550,11 +576,11 @@ export default class SiteLayout extends Component {
                           </div>
                       </div>
                   */
-                  }   
-                  {/* end .fwidget */}{/*</div>*/}
-                  {/* end .footer-widget */}
+                    
+                  /* end .fwidget *//*</div>*/
+                  /* end .footer-widget */
 
-                  {
+                  
                   /*
                   <div className="footer-widget">
                       <div id="nav_menu-5" className="fwidget et_pb_widget widget_nav_menu"><h4
@@ -580,11 +606,11 @@ export default class SiteLayout extends Component {
                           </div>
                       </div>
                   */
-                  }
-                  {/* end .fwidget */}{/*</div>*/}
-                  {/* end .footer-widget */}
                   
-                  {
+                  /* end .fwidget *//*</div>*/
+                  /* end .footer-widget */
+                  
+                  
                   /*
                   <div className="footer-widget last">
                       <div id="nav_menu-6" className="fwidget et_pb_widget widget_nav_menu"><h4
@@ -613,15 +639,15 @@ export default class SiteLayout extends Component {
                           </div>
                       </div>
                   */
-                  }
-                  {/* end .fwidget */}{/*</div>*/}
-                  {/* end .footer-widget */}
+                  
+                  /* end .fwidget *//*</div>*/
+                  /* end .footer-widget */
 
-              {/*</div>*/}{/* #footer-widgets */}
-          </div>{/* .container */}
+              /*</div>*//* #footer-widgets */
+          /*</div>*/ /* .container */
 
-          {/*<div id="footer-top-2">*/}
-              {
+          /*<div id="footer-top-2">*/
+              
                 /*
                 <div className="container clearfix">
                   <ul className="bf-footer-links">
@@ -647,13 +673,13 @@ export default class SiteLayout extends Component {
                   </p>
                 </div>
                 */
-              } {/* .container */}
-          {/*</div>*/} {/* #footer-bottom-2 */}
+               /* .container */
+          /*</div>*/ /* #footer-bottom-2 */
 
-          {/* Copyright | Social */}
-          {/*<div id="footer-bottom">*/}
-              {/*<div className="container clearfix">*/}
-                  {
+          /* Copyright | Social */
+          /*<div id="footer-bottom">*/
+              /*<div className="container clearfix">*/
+                  
                   /*
                   <ul className="et-social-icons">
                       <li className="et-social-icon">
@@ -688,41 +714,18 @@ export default class SiteLayout extends Component {
                       </li>
                   </ul>
                   */
-                  }
-
-                  {/*End JCNM*/}
                   
-                  {
+
+                  /*End JCNM*/
+                  
+                  
                   /*
                   <p id="footer-info">
                     2017-2018 © ™ Blockfreight, Inc. | <a href="https://bitcoincash.org"><img src="/images/A_Bitcoin_Company.svg" alt="A Bitcoin Company" id="logo" data-actual-width={114} data-actual-height={13} scale={0} /></a> | made with ♥ in <a href="https://sfgov.org" title="digital | strategy | agency">San Francisco, CA.</a>
                   </p>
                   */
-                  }
+                  
 
-              {/*</div>*/} {/* .container */}
-          {/*</div>*/} {/* #footer-bottom */}
-      </footer>
-
-  </div>
-);
-
-}
-}
-// export default SiteLayout;
-//
-// (function($) {
-//     function setup_collapsible_submenus() {
-//         $( "<div class='sub-menu-toggle'></div>" ).insertBefore( "#main-header #mobile_menu.et_mobile_menu .menu-item-has-children > a" );
-//         $( "#main-header #mobile_menu.et_mobile_menu .sub-menu-toggle" ).click(function () {
-//             $(this).toggleClass("popped");
-//         });
-//     }
-//     $(document).ready(function() {
-//         setup_collapsible_submenus();
-//     });
-//     $(window).load(function() {
-//         setup_collapsible_submenus();
-//     });
-// })
-//
+              /*</div>*/ /* .container */
+          /*</div>*/ /* #footer-bottom */
+    /*  </footer> */
