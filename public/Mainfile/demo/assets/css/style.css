@@ -630,7 +630,9 @@ Features app
 }
 
 .icon-app .icon img {
-    width: 40px;
+    /*width: 40px;*/
+    width: 80px;
+    height: 80px;
 }
 
 .icon-app {
