@@ -9,6 +9,27 @@ import LoadableWrapper from '/imports/helpers/react-loadable/LoadableWrapper.js'
 //import LoadableInvestors from '/imports/helpers/react-loadable/LoadableWrapper.js';
 // import { slide as Menu } from 'react-burger-menu'
 
+//<!--External Stylesheets css-->
+//<!-- Bootstrap -->
+//import '../../../../public/Mainfile/demo/assets/css/bootstrap.min.css'
+
+//<!--elegant icon font -->
+//import '../../../../public/Mainfile/demo/assets/css/elegant-icons.css'
+    
+//<!--Animate -->
+//import '../../../../public/Mainfile/demo/assets/css/animate.css'
+
+//<!-- Owl-carousel-->
+//import '../../../../public/Mainfile/demo/assets/css/owl.carousel.min.css'
+//import '../../../../public/Mainfile/demo/assets/css/owl.theme.default.min.css'
+
+//<!-- Magnific Popup-->
+//import '../../../../public/Mainfile/demo/assets/css/magnific-popup.css'
+
+//<!--Template Stylesheets css-->
+import '../../../../public/Mainfile/demo/assets/css/style.css'
+//import '../../../../public/Mainfile/demo/assets/css/responsive.css'
+
 const LoadableHomePage = LoadableWrapper({
   loader: () => import('/imports/ui/pages/home/home.js'),
   modules: ['/imports/ui/pages/home/home.js'],
@@ -58,134 +79,179 @@ export default class SiteLayout extends Component {
         hide =true;
     }
     return(
-    <div className="site-container">
-      <Helmet>
-        <title>Blockfreight</title>
-      </Helmet>
-    
-      
+        <div className="site-container">
+            <Helmet>
+                <title>Blockfreight</title>
+            </Helmet>
+            
+            
 
-      <div className="row body-container container">
-        {/*<img src="https://i0.wp.com/blockfreight.com/wp-content/uploads/2017/04/shutterstock_564555790-e1512618174487.jpg?zoom=1.7999999523162842&amp;w=1080&amp;ssl=1" alt="" width="843" height="473" src-orig="https://i0.wp.com/blockfreight.com/wp-content/uploads/2017/04/shutterstock_564555790-e1512618174487.jpg?w=1080&amp;ssl=1" scale="1.7999999523162842"/>*/}
-        <br/>
-        <Switch>
-            <Route exact path="/" component={LoadableHomePage} />
-            <Route path="/accounts" component={LoadableAccountPage} />
-            {/*<Route exact path="/test" component={LoadableTestPage} />*/}
-            {/*<Route exact path="/investors" component={LoadableInvestors} />*/}
-            {/*<Route exact path="/team" component={LoadableTeam} />*/}
-            {/*<Route exact path="/careers" component={LoadableTeam} />*/}
-            <Route exact path="/articles" component={LoadableWrapper({
-                loader: () => import('/imports/ui/pages/articles.jsx'),
-                modules: ['/imports/ui/pages/articles.jsx'],
-            })} />
-            <Route exact path="/careers" component={LoadableWrapper({
-                loader: () => import('/imports/ui/pages/careers.jsx'),
-                modules: ['/imports/ui/pages/careers.jsx'],
-            })} />
-            <Route exact path="/contactus" component={LoadableWrapper({
-                loader: () => import('/imports/ui/pages/contactus.jsx'),
-                modules: ['/imports/ui/pages/contactus.jsx'],
-            })} />
-            <Route exact path="/developers" component={LoadableWrapper({
-                loader: () => import('/imports/ui/pages/developers.jsx'),
-                modules: ['/imports/ui/pages/developers.jsx'],
-            })} />
-            <Route exact path="/development" component={LoadableWrapper({
-                loader: () => import('/imports/ui/pages/development.jsx'),
-                modules: ['/imports/ui/pages/development.jsx'],
-            })} />
-            <Route exact path="/discussions" component={LoadableWrapper({
-                loader: () => import('/imports/ui/pages/discussions.jsx'),
-                modules: ['/imports/ui/pages/discussions.jsx'],
-            })} />
-            <Route exact path="/downloads" component={LoadableWrapper({
-                loader: () => import('/imports/ui/pages/downloads.jsx'),
-                modules: ['/imports/ui/pages/downloads.jsx'],
-            })} />
-            <Route exact path="/engineering" component={LoadableWrapper({
-                loader: () => import('/imports/ui/pages/engineering.jsx'),
-                modules: ['/imports/ui/pages/engineering.jsx'],
-            })} />
-            <Route exact path="/faq" component={LoadableWrapper({
-                loader: () => import('/imports/ui/pages/faq.jsx'),
-                modules: ['/imports/ui/pages/faq.jsx'],
-            })} />
-            <Route exact path="/investors" component={LoadableWrapper({
-                loader: () => import('/imports/ui/pages/investors.jsx'),
-                modules: ['/imports/ui/pages/investors.jsx'],
-            })} />
-            <Route exact path="/news" component={LoadableWrapper({
-                loader: () => import('/imports/ui/pages/news.jsx'),
-                modules: ['/imports/ui/pages/news.jsx'],
-            })} />
-            <Route exact path="/partners" component={LoadableWrapper({
-                loader: () => import('/imports/ui/pages/partners.jsx'),
-                modules: ['/imports/ui/pages/partners.jsx'],
-            })} />
-            <Route exact path="/press" component={LoadableWrapper({
-                loader: () => import('/imports/ui/pages/press.jsx'),
-                modules: ['/imports/ui/pages/press.jsx'],
-            })} />
-            <Route exact path="/protocol" component={LoadableWrapper({
-                loader: () => import('/imports/ui/pages/protocol.jsx'),
-                modules: ['/imports/ui/pages/protocol.jsx'],
-            })} />
-            <Route exact path="/research" component={LoadableWrapper({
-                loader: () => import('/imports/ui/pages/research.jsx'),
-                modules: ['/imports/ui/pages/research.jsx'],
-            })} />
-            <Route exact path="/support" component={LoadableWrapper({
-                loader: () => import('/imports/ui/pages/support.jsx'),
-                modules: ['/imports/ui/pages/support.jsx'],
-            })} />
-            <Route exact path="/team" component={LoadableWrapper({
-                loader: () => import('/imports/ui/pages/team.jsx'),
-                modules: ['/imports/ui/pages/team.jsx'],
-            })} />
-            <Route exact path="/template" component={LoadableWrapper({
-                loader: () => import('/imports/ui/pages/template.jsx'),
-                modules: ['/imports/ui/pages/template.jsx'],
-            })} />
-            <Route exact path="/training" component={LoadableWrapper({
-                loader: () => import('/imports/ui/pages/training.jsx'),
-                modules: ['/imports/ui/pages/training.jsx'],
-            })} />
-            <Route exact path="/wallets" component={LoadableWrapper({
-                loader: () => import('/imports/ui/pages/wallets.jsx'),
-                modules: ['/imports/ui/pages/wallets.jsx'],
-            })} />
+            <div className="row body-container container">
+                {/*<img src="https://i0.wp.com/blockfreight.com/wp-content/uploads/2017/04/shutterstock_564555790-e1512618174487.jpg?zoom=1.7999999523162842&amp;w=1080&amp;ssl=1" alt="" width="843" height="473" src-orig="https://i0.wp.com/blockfreight.com/wp-content/uploads/2017/04/shutterstock_564555790-e1512618174487.jpg?w=1080&amp;ssl=1" scale="1.7999999523162842"/>*/}
+                <br/>
+                <Switch>
+                    <Route exact path="/" component={LoadableHomePage} />
+                    <Route path="/accounts" component={LoadableAccountPage} />
+                    {/*<Route exact path="/test" component={LoadableTestPage} />*/}
+                    {/*<Route exact path="/investors" component={LoadableInvestors} />*/}
+                    {/*<Route exact path="/team" component={LoadableTeam} />*/}
+                    {/*<Route exact path="/careers" component={LoadableTeam} />*/}
+                    <Route exact path="/articles" component={LoadableWrapper({
+                        loader: () => import('/imports/ui/pages/articles.jsx'),
+                        modules: ['/imports/ui/pages/articles.jsx'],
+                    })} />
+                    <Route exact path="/careers" component={LoadableWrapper({
+                        loader: () => import('/imports/ui/pages/careers.jsx'),
+                        modules: ['/imports/ui/pages/careers.jsx'],
+                    })} />
+                    <Route exact path="/contactus" component={LoadableWrapper({
+                        loader: () => import('/imports/ui/pages/contactus.jsx'),
+                        modules: ['/imports/ui/pages/contactus.jsx'],
+                    })} />
+                    <Route exact path="/developers" component={LoadableWrapper({
+                        loader: () => import('/imports/ui/pages/developers.jsx'),
+                        modules: ['/imports/ui/pages/developers.jsx'],
+                    })} />
+                    <Route exact path="/development" component={LoadableWrapper({
+                        loader: () => import('/imports/ui/pages/development.jsx'),
+                        modules: ['/imports/ui/pages/development.jsx'],
+                    })} />
+                    <Route exact path="/discussions" component={LoadableWrapper({
+                        loader: () => import('/imports/ui/pages/discussions.jsx'),
+                        modules: ['/imports/ui/pages/discussions.jsx'],
+                    })} />
+                    <Route exact path="/downloads" component={LoadableWrapper({
+                        loader: () => import('/imports/ui/pages/downloads.jsx'),
+                        modules: ['/imports/ui/pages/downloads.jsx'],
+                    })} />
+                    <Route exact path="/engineering" component={LoadableWrapper({
+                        loader: () => import('/imports/ui/pages/engineering.jsx'),
+                        modules: ['/imports/ui/pages/engineering.jsx'],
+                    })} />
+                    <Route exact path="/faq" component={LoadableWrapper({
+                        loader: () => import('/imports/ui/pages/faq.jsx'),
+                        modules: ['/imports/ui/pages/faq.jsx'],
+                    })} />
+                    <Route exact path="/investors" component={LoadableWrapper({
+                        loader: () => import('/imports/ui/pages/investors.jsx'),
+                        modules: ['/imports/ui/pages/investors.jsx'],
+                    })} />
+                    <Route exact path="/news" component={LoadableWrapper({
+                        loader: () => import('/imports/ui/pages/news.jsx'),
+                        modules: ['/imports/ui/pages/news.jsx'],
+                    })} />
+                    <Route exact path="/partners" component={LoadableWrapper({
+                        loader: () => import('/imports/ui/pages/partners.jsx'),
+                        modules: ['/imports/ui/pages/partners.jsx'],
+                    })} />
+                    <Route exact path="/press" component={LoadableWrapper({
+                        loader: () => import('/imports/ui/pages/press.jsx'),
+                        modules: ['/imports/ui/pages/press.jsx'],
+                    })} />
+                    <Route exact path="/protocol" component={LoadableWrapper({
+                        loader: () => import('/imports/ui/pages/protocol.jsx'),
+                        modules: ['/imports/ui/pages/protocol.jsx'],
+                    })} />
+                    <Route exact path="/research" component={LoadableWrapper({
+                        loader: () => import('/imports/ui/pages/research.jsx'),
+                        modules: ['/imports/ui/pages/research.jsx'],
+                    })} />
+                    <Route exact path="/support" component={LoadableWrapper({
+                        loader: () => import('/imports/ui/pages/support.jsx'),
+                        modules: ['/imports/ui/pages/support.jsx'],
+                    })} />
+                    <Route exact path="/team" component={LoadableWrapper({
+                        loader: () => import('/imports/ui/pages/team.jsx'),
+                        modules: ['/imports/ui/pages/team.jsx'],
+                    })} />
+                    <Route exact path="/template" component={LoadableWrapper({
+                        loader: () => import('/imports/ui/pages/template.jsx'),
+                        modules: ['/imports/ui/pages/template.jsx'],
+                    })} />
+                    <Route exact path="/training" component={LoadableWrapper({
+                        loader: () => import('/imports/ui/pages/training.jsx'),
+                        modules: ['/imports/ui/pages/training.jsx'],
+                    })} />
+                    <Route exact path="/wallets" component={LoadableWrapper({
+                        loader: () => import('/imports/ui/pages/wallets.jsx'),
+                        modules: ['/imports/ui/pages/wallets.jsx'],
+                    })} />
 
-            <Route exact path="/login" component={LoadableWrapper({
-                loader: () => import('/imports/ui/pages/login.jsx'),
-                modules: ['/imports/ui/pages/login.jsx'],
-            })} />
-            <Route exact path="/signup/" component={LoadableWrapper({
-                loader: () => import('/imports/ui/pages/signup.jsx'),
-                modules: ['/imports/ui/pages/signup.jsx'],
-            })} />
-            <Route  path="/verify-email/:token" component={LoadableWrapper({
-                loader: () => import('/imports/ui/pages/verifyEmail.jsx'),
-                modules: ['/imports/ui/pages/verifyEmail.jsx'],
-            })} />
-            <Route exact path="/dashboard" component={LoadableWrapper({
-                loader: () => import('/imports/ui/pages/dashboard.jsx'),
-                modules: ['/imports/ui/pages/dashboard.jsx'],
-            })} />
-            <Route exact path="/signout" component={LoadableWrapper({
-                loader: () => import('/imports/ui/pages/signout.jsx'),
-                modules: ['/imports/ui/pages/signout.jsx'],
-            })} />
-            <Route component={NotFoundPage} />
-        </Switch>
-      </div>
+                    <Route exact path="/login" component={LoadableWrapper({
+                        loader: () => import('/imports/ui/pages/login.jsx'),
+                        modules: ['/imports/ui/pages/login.jsx'],
+                    })} />
+                    <Route exact path="/signup/" component={LoadableWrapper({
+                        loader: () => import('/imports/ui/pages/signup.jsx'),
+                        modules: ['/imports/ui/pages/signup.jsx'],
+                    })} />
+                    <Route  path="/verify-email/:token" component={LoadableWrapper({
+                        loader: () => import('/imports/ui/pages/verifyEmail.jsx'),
+                        modules: ['/imports/ui/pages/verifyEmail.jsx'],
+                    })} />
+                    <Route exact path="/dashboard" component={LoadableWrapper({
+                        loader: () => import('/imports/ui/pages/dashboard.jsx'),
+                        modules: ['/imports/ui/pages/dashboard.jsx'],
+                    })} />
+                    <Route exact path="/signout" component={LoadableWrapper({
+                        loader: () => import('/imports/ui/pages/signout.jsx'),
+                        modules: ['/imports/ui/pages/signout.jsx'],
+                    })} />
+                    <Route component={NotFoundPage} />
+                </Switch>
+            </div>
 
-      
-    
-    </div>
-    );
+            {/*<!-- Header -->*/}
+            <header className="navbar-header">
+                <nav className="navbar navbar-expand-lg fixed-top">
+                    <div className="container">
+                        <a className="navbar-brand" href="#"><img src="../../../../public/Mainfile/demo/assets/images/blockfreight_logo.png" alt=""></img></a>
+                        
+                        <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span className="navbar-toggler-icon  icon_menu"></span>
+                        </button>
 
-  }
+                        <div className="collapse navbar-collapse " id="navbarSupportedContent">
+                            <ul className="navbar-nav ml-auto">
+                                <li className="nav-item active">
+                                    <a data-scroll="" className="nav-link section-scroll" href="#home">Home</a>
+                                </li>
+                                
+                                <li className="nav-item">
+                                    <a data-scroll="" className="nav-link section-scroll" href="#about-p">About</a>
+                                </li>
+
+                                <li className="nav-item">
+                                    <a data-scroll="" className="nav-link section-scroll" href="#features">Features</a>
+                                </li>
+                                
+                                <li className="nav-item">
+                                    <a data-scroll="" className="nav-link section-scroll" href="#pricing">Pricing</a>
+                                </li>
+                                
+                                <li>
+                                    {/*<!--<a data-scroll="" href="#testimonials" className="nav-link section-scroll">Testimonials</a>-->*/}
+                                </li>
+                                
+                                <li>
+                                    <a data-scroll="" href="#blog" className="nav-link section-scroll">Blog</a>
+                                </li>
+
+                                <li>
+                                    <div className="connect-block">
+                                        <a href="">Sign Up</a>
+                                        <a href="" className="btn btn-white">Start Free Trial</a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </header>
+            {/*<!--Header-->*/}
+        </div>
+        );
+    }
 }
 // export default SiteLayout;
 //
