@@ -12,6 +12,7 @@ import LoadableWrapper from '/imports/helpers/react-loadable/LoadableWrapper.js'
 //<!--External Stylesheets css-->
 //<!-- Bootstrap -->
 //import '../../../../public/Mainfile/demo/assets/css/bootstrap.min.css'
+import 'bootstrap/dist/css/bootstrap.min.css'
 
 //<!--elegant icon font -->
 //import '../../../../public/Mainfile/demo/assets/css/elegant-icons.css'
@@ -24,11 +25,14 @@ import LoadableWrapper from '/imports/helpers/react-loadable/LoadableWrapper.js'
 //import '../../../../public/Mainfile/demo/assets/css/owl.theme.default.min.css'
 
 //<!-- Magnific Popup-->
-//import '../../../../public/Mainfile/demo/assets/css/magnific-popup.css'
+import '../../../../public/Mainfile/demo/assets/css/magnific-popup.css'
 
 //<!--Template Stylesheets css-->
 import '../../../../public/Mainfile/demo/assets/css/style.css'
 //import '../../../../public/Mainfile/demo/assets/css/responsive.css'
+
+// Bootstrap plugin
+//import '../../../../public/Mainfile/demoassets/js/bootstrap.min.js'
 
 const LoadableHomePage = LoadableWrapper({
   loader: () => import('/imports/ui/pages/home/home.js'),
@@ -81,7 +85,7 @@ export default class SiteLayout extends Component {
     return(
         <div className="site-container">
             <Helmet>
-                <title>Blockfreight</title>
+                <title>Blockfreight test</title>
             </Helmet>
             
             
@@ -206,7 +210,7 @@ export default class SiteLayout extends Component {
                 <nav className="navbar navbar-expand-lg fixed-top">
                     <div className="container">
                         <a className="navbar-brand" href="#"><img src="../../../../public/Mainfile/demo/assets/images/blockfreight_logo.png" alt=""></img></a>
-                        
+                    {/*    
                         <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                             <span className="navbar-toggler-icon  icon_menu"></span>
                         </button>
@@ -229,9 +233,9 @@ export default class SiteLayout extends Component {
                                     <a data-scroll="" className="nav-link section-scroll" href="#pricing">Pricing</a>
                                 </li>
                                 
-                                <li>
+                <li>*/}
                                     {/*<!--<a data-scroll="" href="#testimonials" className="nav-link section-scroll">Testimonials</a>-->*/}
-                                </li>
+                                {/*</li>
                                 
                                 <li>
                                     <a data-scroll="" href="#blog" className="nav-link section-scroll">Blog</a>
@@ -244,7 +248,7 @@ export default class SiteLayout extends Component {
                                     </div>
                                 </li>
                             </ul>
-                        </div>
+                        </div>*/}
                     </div>
                 </nav>
             </header>
