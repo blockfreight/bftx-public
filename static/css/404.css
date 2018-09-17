@@ -1,0 +1,162 @@
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  margin: 0;
+  font-family: Oswald;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  font-size: 18px;
+}
+
+#p4p-scene {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+#p4p-scene .layer {
+  width: 100%;
+  height: 100%;
+}
+
+.p4p-dock-scene .p4p-text-layer {
+  color: #FFFFFF;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+@media screen and (max-width: 768px) {
+  .p4p-dock-scene .p4p-text-layer {
+    top: 0;
+    -moz-transform: none;
+    -ms-transform: none;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+.p4p-dock-scene .p4p-text-layer h1 {
+  margin: 0 15px;
+}
+.p4p-dock-scene .p4p-text-layer h1 span {
+  display: block;
+  font-size: 3em;
+  text-transform: uppercase;
+}
+@media screen and (max-width: 768px) {
+  .p4p-dock-scene .p4p-text-layer h1 span {
+    font-size: 2em;
+  }
+}
+.p4p-dock-scene .p4p-text-layer p {
+  margin: 0 15px 30px;
+}
+.p4p-dock-scene .p4p-text-layer a {
+  color: #3e9956;
+  text-decoration: none;
+}
+.p4p-dock-scene .p4p-text-layer a:hover {
+  border-bottom: 2px solid;
+}
+.p4p-dock-scene .p4p-text-layer input {
+  background-color: transparent;
+  color: #8a6a41;
+  border: 4px solid rgba(138, 106, 65, 0.5);
+  font-size: 2em;
+  font-family: oswald;
+  text-transform: uppercase;
+  padding: .4em 1em;
+  outline: none;
+  text-align: center;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+}
+@media screen and (max-width: 768px) {
+  .p4p-dock-scene .p4p-text-layer input {
+    font-size: 1.5em;
+    padding: .3em .7em;
+  }
+}
+.p4p-dock-scene .p4p-text-layer input::-webkit-input-placeholder {
+  color: rgba(138, 106, 65, 0.5);
+}
+.p4p-dock-scene .p4p-text-layer input:-moz-placeholder {
+  color: rgba(138, 106, 65, 0.5);
+}
+.p4p-dock-scene .p4p-text-layer input::-moz-placeholder {
+  color: rgba(138, 106, 65, 0.5);
+}
+.p4p-dock-scene .p4p-text-layer input:-ms-input-placeholder {
+  color: rgba(138, 106, 65, 0.5);
+}
+.p4p-dock-scene .p4p-parallax-background {
+  width: 130%;
+  height: 130%;
+  background-position: center;
+  background-size: cover;
+  position: fixed;
+  top: -15%;
+  left: -15%;
+}
+@media screen and (max-width: 768px) {
+  .p4p-dock-scene .p4p-parallax-background {
+    width: 260%;
+    left: -150%;
+  }
+}
+.p4p-dock-scene .layer:nth-child(1) .p4p-parallax-background {
+  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIxMCUiIHN0b3AtY29sb3I9IiNhNWU2ZjQiLz48c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNmZWRhNmUiLz48L2xpbmVhckdyYWRpZW50PjwvZGVmcz48cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ1cmwoI2dyYWQpIiAvPjwvc3ZnPiA=');
+  background-size: 100%;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(10%, #a5e6f4), color-stop(100%, #053D7C));
+  background-image: -moz-linear-gradient(top, #a5e6f4 10%, #053D7C 100%);
+  background-image: -webkit-linear-gradient(top, #a5e6f4 10%, #053D7C 100%);
+  background-image: linear-gradient(-180deg, #77D7EC 39%, #4096BE 66%, #0F4783 87%, #013575 100%);
+}
+.p4p-dock-scene .layer:nth-child(2) .p4p-parallax-background {
+  background-image: url(../img/dock/layer2.png);
+}
+.p4p-dock-scene .layer:nth-child(3) .p4p-parallax-background {
+  background-image: url(../img/dock/layer3.png);
+}
+.p4p-dock-scene .layer:nth-child(4) .p4p-parallax-background {
+  background-image: url(../img/dock/layer4.png);
+}
+.p4p-dock-scene .layer:nth-child(5) .p4p-parallax-background {
+  background-image: url(../img/dock/layer5.png);
+}
+.p4p-dock-scene .layer:nth-child(6) .p4p-parallax-background {
+  background-image: url(../img/dock/layer6.png);
+}
+.p4p-dock-scene .layer:nth-child(7) .p4p-parallax-background {
+  background-image: url(../img/dock/layer7.png);
+}
+.p4p-dock-scene .layer:nth-child(8) .p4p-parallax-background {
+  background-image: url(../img/dock/layer8.png);
+}
+
+.p4p-parallax-background {
+  width: 130%;
+  height: 130%;
+  background-position: center;
+  background-size: cover;
+  position: fixed;
+  top: -15%;
+  left: -15%;
+}
+@media screen and (max-width: 768px) {
+  .p4p-parallax-background {
+    width: 260%;
+    left: -150%;
+  }
+}
