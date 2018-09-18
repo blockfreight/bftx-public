@@ -161,16 +161,18 @@ func (this *MainController) Register() {
 
 func sendVerification(email, u string, domainname string) bool {
 	link := "http://" + domainname + "/user/verify/" + u
-	host := "smtp.gmail.com"
-	port := 587
+	//host := "smtp.gmail.com"
+	//port := 587
+	host := "melbourne.digital"
+	port := 465
 	msg := gomail.NewMessage()
-	msg.SetAddressHeader("From", "support@blockfreight.com", "Blockfreight Inc.")
+	msg.SetAddressHeader("From", "signup@blockfreight.com", "Blockfreight Inc.")
 	msg.SetHeader("To", email)
 	msg.SetHeader("Subject", "Account Verification for Blockfreight Inc.")
 	msg.SetBody("text/html", "To verify your account, please click on the link: <a href=\""+link+
 		"\">"+link+"</a><br><br>Best Regards,<br>Blockfreight Inc.")
 	//m := gomail.NewMailer(host, "youraccount@gmail.com", "YourPassword", port)
-	m := gomail.NewMailer(host, "clayton.h.w.wong@gmail.com", "upto$600cash", port)
+	m := gomail.NewMailer(host, "signup@blockfreight.com", "kisskiss", port)
 	if err := m.Send(msg); err != nil {
 		return false
 	}
