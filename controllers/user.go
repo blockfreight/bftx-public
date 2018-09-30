@@ -87,14 +87,14 @@ func (this *MainController) Login() {
 		m["username"] = email
 		m["timestamp"] = time.Now()
 		this.SetSession("bftx-public", m)
-		this.Redirect("/"+back, 302)
+		this.Redirect("/", 302)
 	}
 }
 
 func (this *MainController) Logout() {
 	this.activeContent("logout")
 	this.DelSession("bftx-public")
-	this.Redirect("/home", 302)
+	this.Redirect("/", 302)
 }
 
 type user1 struct {
@@ -161,18 +161,17 @@ func (this *MainController) Register() {
 
 func sendVerification(email, u string, domainname string) bool {
 	link := "http://" + domainname + "/user/verify/" + u
-	//host := "smtp.gmail.com"
-	//port := 587
-	host := "melbourne.digital"
-	port := 465
+	host := "mail.blockfreight.com"
+	user := "signup@blockfreight.com"
+	pass := "kisskiss"
+	port := 587
 	msg := gomail.NewMessage()
 	msg.SetAddressHeader("From", "signup@blockfreight.com", "Blockfreight Inc.")
 	msg.SetHeader("To", email)
 	msg.SetHeader("Subject", "Account Verification for Blockfreight Inc.")
 	msg.SetBody("text/html", "To verify your account, please click on the link: <a href=\""+link+
 		"\">"+link+"</a><br><br>Best Regards,<br>Blockfreight Inc.")
-	//m := gomail.NewMailer(host, "youraccount@gmail.com", "YourPassword", port)
-	m := gomail.NewMailer(host, "signup@blockfreight.com", "kisskiss", port)
+	m := gomail.NewMailer(host, user, pass, port)
 	if err := m.Send(msg); err != nil {
 		return false
 	}
@@ -423,7 +422,9 @@ func (this *MainController) Forgot() {
 
 func sendRequestReset(email, u string, domainname string) bool {
 	link := "http://" + domainname + "/user/reset/" + u
-	host := "smtp.gmail.com"
+	host := "mail.blockfreight.com"
+	user := "signup@blockfreight.com"
+	pass := "kisskiss"
 	port := 587
 	msg := gomail.NewMessage()
 	msg.SetAddressHeader("From", "support@blockfreight.com", "Blockfreight Inc.")
@@ -431,7 +432,7 @@ func sendRequestReset(email, u string, domainname string) bool {
 	msg.SetHeader("Subject", "Request Password Reset for Blockfreight Inc.")
 	msg.SetBody("text/html", "To reset your password, please click on the link: <a href=\""+link+
 		"\">"+link+"</a><br><br>Best Regards,<br>Blockfreight Inc.")
-	m := gomail.NewMailer(host, "youraccount@gmail.com", "YourPassword", port)
+	m := gomail.NewMailer(host, user, pass, port)
 	if err := m.Send(msg); err != nil {
 		return false
 	}
